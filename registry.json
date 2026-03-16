@@ -12,6 +12,7 @@
       "github": "https://github.com/ian-nason/eoir-database",
       "huggingface": "https://huggingface.co/datasets/Nason/eoir-database",
       "attach_url": "https://huggingface.co/datasets/Nason/eoir-database/resolve/main/eoir.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/eoir-database/blob/main/DICTIONARY.md",
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2025-11-01"
@@ -28,6 +29,7 @@
       "github": "https://github.com/ian-nason/ice-database",
       "huggingface": "https://huggingface.co/datasets/Nason/ice-database",
       "attach_url": "https://huggingface.co/datasets/Nason/ice-database/resolve/main/ice.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/ice-database/blob/main/DICTIONARY.md",
       "maintainer": "Ian Nason",
       "license": "CC-0",
       "updated": "2025-10-15"
@@ -44,6 +46,7 @@
       "github": "https://github.com/ian-nason/fec-database",
       "huggingface": "https://huggingface.co/datasets/Nason/fec-database",
       "attach_url": "https://huggingface.co/datasets/Nason/fec-database/resolve/main/fec.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/fec-database/blob/main/DICTIONARY.md",
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-03-01"
