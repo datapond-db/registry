@@ -45,11 +45,49 @@ The final artifact is a single `.duckdb` file containing:
 
 ### 3. Hosted on Hugging Face
 
-Upload the `.duckdb` file to a Hugging Face dataset repository. This enables:
+Upload the `.duckdb` file to a Hugging Face dataset repository. This enables remote attach via DuckDB's httpfs extension, local download via `huggingface_hub`, and version tracking.
 
-- Remote attach via DuckDB's httpfs extension (no download required)
-- Local download via `huggingface_hub`
-- Version tracking and file metadata
+**Step-by-step upload instructions:**
+
+First, install the Hugging Face CLI and log in:
+
+```bash
+pip install huggingface_hub
+huggingface-cli login
+```
+
+Create a new dataset repository on Hugging Face:
+
+```bash
+huggingface-cli repo create your-dataset-name --type dataset
+```
+
+Clone the empty repo, copy your `.duckdb` file into it, and push:
+
+```bash
+git clone https://huggingface.co/datasets/YOUR_USER/your-dataset-name
+cd your-dataset-name
+cp /path/to/your-db.duckdb .
+git lfs install
+git lfs track "*.duckdb"
+git add .gitattributes your-db.duckdb
+git commit -m "Add database file"
+git push
+```
+
+Alternatively, upload directly without cloning:
+
+```bash
+huggingface-cli upload YOUR_USER/your-dataset-name ./your-db.duckdb your-db.duckdb --repo-type dataset
+```
+
+After uploading, verify the file is accessible by constructing the direct URL:
+
+```
+https://huggingface.co/datasets/YOUR_USER/your-dataset-name/resolve/main/your-db.duckdb
+```
+
+This URL becomes the `attach_url` in your registry entry.
 
 ### 4. Documentation
 
@@ -64,14 +102,26 @@ Your GitHub repository must include a README with:
 ## Submission process
 
 1. **Build your database** following the requirements above
-2. **Upload to Hugging Face** and verify remote attach works:
+2. **Upload to Hugging Face** using the instructions in the "Hosted on Hugging Face" section above
+3. **Verify remote attach works** by running these commands in DuckDB:
    ```sql
-   INSTALL httpfs; LOAD httpfs;
+   INSTALL httpfs;
+   LOAD httpfs;
    ATTACH 'https://huggingface.co/datasets/YOUR_USER/YOUR_DB/resolve/main/YOUR_DB.duckdb' AS db (READ_ONLY);
    SELECT * FROM db.information_schema.tables;
+   SELECT * FROM db._metadata;
    ```
-3. **Open a pull request** on this repository adding an entry to `registry.json`
-4. **Fill out the validation checklist** in your PR description (see below)
+   Or verify with the Python client:
+   ```python
+   import duckdb
+   con = duckdb.connect()
+   con.install_extension("httpfs")
+   con.load_extension("httpfs")
+   con.execute("ATTACH 'https://huggingface.co/datasets/YOUR_USER/YOUR_DB/resolve/main/YOUR_DB.duckdb' AS db (READ_ONLY)")
+   con.sql("SELECT * FROM db.information_schema.tables").show()
+   ```
+4. **Open a pull request** on this repository adding an entry to `registry.json`
+5. **Fill out the validation checklist** in your PR description (see below)
 
 ### Registry entry format
 
