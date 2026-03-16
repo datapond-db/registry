@@ -1,0 +1,52 @@
+{
+  "databases": [
+    {
+      "id": "eoir",
+      "name": "EOIR Immigration Court Database",
+      "description": "Every immigration court proceeding since the 1970s: hearings, charges, decisions, judges, representation, bond, appeals",
+      "rows": 164600000,
+      "tables": 98,
+      "size_gb": 6.6,
+      "source": "DOJ Executive Office for Immigration Review",
+      "source_url": "https://www.justice.gov/eoir/foia-library-0",
+      "github": "https://github.com/ian-nason/eoir-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/eoir-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/eoir-database/resolve/main/eoir.duckdb",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2025-11-01"
+    },
+    {
+      "id": "ice",
+      "name": "ICE Enforcement Database",
+      "description": "Individual-level records of ICE arrests, detainers, detentions, and removals with linked anonymized IDs",
+      "rows": 17800000,
+      "tables": 5,
+      "size_gb": 2.0,
+      "source": "Deportation Data Project (FOIA litigation)",
+      "source_url": "https://deportationdata.org",
+      "github": "https://github.com/ian-nason/ice-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/ice-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/ice-database/resolve/main/ice.duckdb",
+      "maintainer": "Ian Nason",
+      "license": "CC-0",
+      "updated": "2025-10-15"
+    },
+    {
+      "id": "fec",
+      "name": "FEC Campaign Finance Database",
+      "description": "Individual donations, PAC contributions, committee expenditures, and independent spending across 12 election cycles (2004-2026)",
+      "rows": 269000000,
+      "tables": 10,
+      "size_gb": 29.0,
+      "source": "Federal Election Commission",
+      "source_url": "https://www.fec.gov/data/browse-data/?tab=bulk-data",
+      "github": "https://github.com/ian-nason/fec-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/fec-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/fec-database/resolve/main/fec.duckdb",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-03-01"
+    }
+  ]
+}
