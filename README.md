@@ -8,7 +8,7 @@ datapond is a collection of clean, queryable DuckDB databases built from messy p
 
 - **Reproducible** -- built from public source files with a scripted pipeline
 - **Queryable** -- stored as a single `.duckdb` file with documented tables
-- **Accessible** -- hosted on Hugging Face for remote attach or local download
+- **Accessible** -- every database can be queried remotely in seconds with no download required, or downloaded locally for full speed
 - **Documented** -- includes a `_metadata` table and full README
 
 ## Quick start
@@ -38,6 +38,7 @@ datapond.download('eoir')
 | [eoir](https://github.com/ian-nason/eoir-database) | 164.6M | 98 | 6.6 GB | DOJ Executive Office for Immigration Review |
 | [ice](https://github.com/ian-nason/ice-database) | 17.8M | 5 | 2.0 GB | Deportation Data Project (FOIA litigation) |
 | [fec](https://github.com/ian-nason/fec-database) | 269.0M | 10 | 29.0 GB | Federal Election Commission |
+| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 56.4M | 48 | 5.8 GB | AACT / ClinicalTrials.gov |
 
 ## Registry format
 
