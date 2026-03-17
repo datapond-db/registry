@@ -79,6 +79,26 @@
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-03-16"
+    },
+    {
+      "id": "cms-medicare",
+      "name": "CMS Medicare Physician & Other Supplier Database",
+      "description": "Provider-level Medicare Part B claims: what every physician billed, what Medicare paid, services and beneficiaries per NPI per HCPCS code (CY2013-CY2023)",
+      "rows": 121707609,
+      "tables": 3,
+      "size_gb": 9.7,
+      "source": "Centers for Medicare & Medicaid Services",
+      "source_url": "https://data.cms.gov/provider-summary-by-type-of-service/medicare-physician-other-practitioners",
+      "github": "https://github.com/ian-nason/cms-medicare-database",
+      "huggingface": "",
+      "attach_url": "",
+      "dictionary_url": "https://github.com/ian-nason/cms-medicare-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2013-2023",
+      "last_rebuilt": "2026-03-17",
+      "update_frequency": "Annual (CMS releases updated PUFs yearly)",
+      "maintainer": "Ian Nason",
+      "license": "Public domain (HCPCS descriptions include AMA CPT content)",
+      "updated": "2026-03-17"
     }
   ]
 }
