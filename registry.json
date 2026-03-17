@@ -50,6 +50,23 @@
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-03-01"
+    },
+    {
+      "id": "clinicaltrials",
+      "name": "ClinicalTrials.gov Database",
+      "description": "Every registered clinical trial: protocols, conditions, interventions, outcomes, sponsors, facilities, eligibility, and results from AACT/ClinicalTrials.gov",
+      "rows": 56400000,
+      "tables": 48,
+      "size_gb": 5.8,
+      "source": "AACT / Clinical Trials Transformation Initiative",
+      "source_url": "https://aact.ctti-clinicaltrials.org/",
+      "github": "https://github.com/ian-nason/clinicaltrials-database",
+      "huggingface": "",
+      "attach_url": "",
+      "dictionary_url": "https://github.com/ian-nason/clinicaltrials-database/blob/main/DICTIONARY.md",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-03-16"
     }
   ]
 }
