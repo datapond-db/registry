@@ -13,6 +13,9 @@
       "huggingface": "https://huggingface.co/datasets/Nason/eoir-database",
       "attach_url": "https://huggingface.co/datasets/Nason/eoir-database/resolve/main/eoir.duckdb",
       "dictionary_url": "https://github.com/ian-nason/eoir-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1996-2025",
+      "last_rebuilt": "2025-11-01",
+      "update_frequency": "Monthly",
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2025-11-01"
@@ -30,6 +33,9 @@
       "huggingface": "https://huggingface.co/datasets/Nason/ice-database",
       "attach_url": "https://huggingface.co/datasets/Nason/ice-database/resolve/main/ice.duckdb",
       "dictionary_url": "https://github.com/ian-nason/ice-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2003-2025",
+      "last_rebuilt": "2025-10-15",
+      "update_frequency": "Irregular (FOIA releases)",
       "maintainer": "Ian Nason",
       "license": "CC-0",
       "updated": "2025-10-15"
@@ -47,6 +53,9 @@
       "huggingface": "https://huggingface.co/datasets/Nason/fec-database",
       "attach_url": "https://huggingface.co/datasets/Nason/fec-database/resolve/main/fec.duckdb",
       "dictionary_url": "https://github.com/ian-nason/fec-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2004-2026",
+      "last_rebuilt": "2026-03-16",
+      "update_frequency": "Quarterly",
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-03-01"
@@ -64,6 +73,9 @@
       "huggingface": "",
       "attach_url": "",
       "dictionary_url": "https://github.com/ian-nason/clinicaltrials-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2000-2026",
+      "last_rebuilt": "2026-03-16",
+      "update_frequency": "Monthly (AACT updates daily, we rebuild monthly)",
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-03-16"
