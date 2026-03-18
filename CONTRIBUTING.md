@@ -45,6 +45,23 @@ The final artifact is a single `.duckdb` file containing:
   - `license` -- data license
   - `version` -- build version string
 - Clear, descriptive table and column names
+- A `_columns` data dictionary table (see below)
+
+#### Adding `_columns` and `DICTIONARY.md`
+
+We provide a reusable script that adds a `_columns` table and generates a
+`DICTIONARY.md` for any DuckDB database:
+
+```bash
+# From the registry repo
+python scripts/add_metadata.py path/to/your-db.duckdb \
+    --source-url https://source-agency.gov \
+    --license "Public domain"
+```
+
+This auto-detects join columns, computes null percentages and example values,
+and exports a readable Markdown data dictionary. See
+[`scripts/add_metadata.py`](scripts/add_metadata.py) for details.
 
 ### 3. Hosted on Hugging Face
 
