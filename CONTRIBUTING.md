@@ -26,6 +26,9 @@ Your GitHub repository must contain a build script (Python, R, shell, or similar
 - Produces a single `.duckdb` file as output
 - Can be re-run to incorporate updates
 
+We recommend [uv](https://docs.astral.sh/uv/) for managing Python dependencies
+(`uv pip install`, `uv run`, `uv venv`) instead of `pip`.
+
 ### 2. DuckDB output
 
 The final artifact is a single `.duckdb` file containing:
@@ -52,7 +55,18 @@ Upload the `.duckdb` file to a Hugging Face dataset repository. This enables rem
 First, install the Hugging Face CLI and log in:
 
 ```bash
-pip install huggingface_hub
+# recommended
+curl -LsSf https://hf.co/cli/install.sh | bash
+
+# or via Homebrew
+brew install huggingface-cli
+```
+
+Create a Hugging Face token with **write** access at
+[huggingface.co/settings/tokens](https://huggingface.co/settings/tokens), then
+log in:
+
+```bash
 huggingface-cli login
 ```
 
@@ -165,12 +179,10 @@ Include this checklist in your PR description:
 The following public datasets would make great additions to the registry. If you're looking for a project, consider building one of these:
 
 - **SEC EDGAR** -- corporate filings, financial statements, insider trading
-- **CMS Medicare** -- provider utilization, payment data, drug spending
 - **Census ACS** -- American Community Survey microdata and summary tables
 - **BLS** -- Bureau of Labor Statistics employment, wages, prices
 - **EPA** -- emissions, water quality, facility compliance, Superfund sites
 - **USDA** -- crop production, food safety, agricultural census
-- **NIH ClinicalTrials** -- clinical trial registry with protocols, results, and sites
 - **DOT** -- aviation, highway safety, pipeline incidents, railroad data
 - **NOAA** -- weather observations, climate data, severe storm events
 - **USPTO** -- patent grants, trademark registrations, assignment records
