@@ -99,6 +99,22 @@
       "maintainer": "Ian Nason",
       "license": "Public domain (HCPCS descriptions include AMA CPT content)",
       "updated": "2026-03-17"
+    },
+    {
+      "id": "ipeds-db",
+      "name": "IPEDS Database",
+      "description": "Database covering every U.S. postsecondary institution from 1997 to 2024—admissions, enrollment, completions, tuition, financial aid, graduation rates, staffing, and more",
+      "rows": 26739551,
+      "tables": 23,
+      "size_gb": 1.1,
+      "source": "National Center for Education Statistics (NCES)",
+      "source_url": "https://nces.ed.gov/ipeds/use-the-data",
+      "github": "https://github.com/paulgp/ipeds-database",
+      "huggingface": "https://huggingface.co/datasets/paulgp85/ipeds-db",
+      "attach_url": "https://huggingface.co/datasets/paulgp85/ipeds-db/resolve/main/ipeds.duckdb",
+      "maintainer": "paulgp85",
+      "license": "Public domain",
+      "updated": "2026-03-18"
     }
   ]
 }
