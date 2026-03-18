@@ -14,7 +14,7 @@ datapond is a collection of clean, queryable DuckDB databases built from messy p
 ## Quick start
 
 ```bash
-pip install datapond
+uv pip install datapond
 ```
 
 ```python
@@ -39,6 +39,8 @@ datapond.download('eoir')
 | [ice](https://github.com/ian-nason/ice-database) | 17.8M | 5 | 2.0 GB | Deportation Data Project (FOIA litigation) |
 | [fec](https://github.com/ian-nason/fec-database) | 269.0M | 10 | 29.0 GB | Federal Election Commission |
 | [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 56.4M | 48 | 5.8 GB | AACT / ClinicalTrials.gov |
+| [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 121.7M | 3 | 9.7 GB | CMS Medicare Physician & Other Practitioners |
+| [ipeds-db](https://github.com/paulgp/ipeds-database) | 26.7M | 23 | 1.1 GB | NCES Integrated Postsecondary Education Data System |
 
 ## Registry format
 
