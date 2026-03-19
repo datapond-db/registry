@@ -112,9 +112,13 @@
       "github": "https://github.com/paulgp/ipeds-database",
       "huggingface": "https://huggingface.co/datasets/paulgp85/ipeds-db",
       "attach_url": "https://huggingface.co/datasets/paulgp85/ipeds-db/resolve/main/ipeds.duckdb",
+      "dictionary_url": "https://github.com/paulgp/ipeds-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1997-2024",
+      "last_rebuilt": "2026-03-19",
+      "update_frequency": "Annual",
       "maintainer": "paulgp85",
       "license": "Public domain",
-      "updated": "2026-03-18"
+      "updated": "2026-03-19"
     }
   ]
 }
