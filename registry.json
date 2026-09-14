@@ -64,9 +64,9 @@
       "id": "clinicaltrials",
       "name": "ClinicalTrials.gov Database",
       "description": "Every registered clinical trial: protocols, conditions, interventions, outcomes, sponsors, facilities, eligibility, and results from AACT/ClinicalTrials.gov",
-      "rows": 58046170,
+      "rows": 59028978,
       "tables": 48,
-      "size_gb": 6.6,
+      "size_gb": 7.1,
       "source": "AACT / Clinical Trials Transformation Initiative",
       "source_url": "https://aact.ctti-clinicaltrials.org/",
       "github": "https://github.com/ian-nason/clinicaltrials-database",
@@ -74,11 +74,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/clinicaltrials-database/resolve/main/clinicaltrials.duckdb",
       "dictionary_url": "https://github.com/ian-nason/clinicaltrials-database/blob/main/DICTIONARY.md",
       "data_date_range": "2000-2026",
-      "last_rebuilt": "2026-07-06",
+      "last_rebuilt": "2026-09-14",
       "update_frequency": "Monthly (AACT updates daily, we rebuild monthly)",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-07-05"
+      "updated": "2026-09-14"
     },
     {
       "id": "cms-medicare",
