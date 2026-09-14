@@ -1,5 +1,30 @@
 # Datapond Changelog
 
+## 2026-09-14 — September refresh
+
+Five databases rebuilt from their latest sources with the July audit's repairs
+now enforced as regression checks inside every build (a failing check aborts
+the publish). Per-database details are in each repo's CHANGELOG.md and on the
+HuggingFace dataset pages.
+
+| Database | Rows (old → new) | Data now through | Headline changes |
+|----------|------------------|------------------|------------------|
+| eoir | 169.2M → 173.3M | Aug 2026 DOJ file | Lookup normalization built in; untyped fallback now fails loudly |
+| ice | 22.0M → 23.6M | 2026-08-06 | DDP Aug 2026 release supersedes March; new `arrests.city`; encounters exact-dedup in build; `data_source` = `release_2026_08` |
+| clinicaltrials | 58.0M → 59.0M | AACT 2026-09-14 | AACT moved its download page; phantom `search_results` table dropped by the builder |
+| dol-visas | 8.5M → 8.8M | FY2026 Q3 | **Fix:** date columns were 100% NULL since July (Excel serials); new-column guard |
+| fec | 347.2M → 354.9M | 2026 cycle (bulk files as of 2026-09-14) | 12-cycle coverage, date-parse rates, view semantics and conduit exclusion enforced at build; file 37.7 → 35.2 GB |
+
+Not rebuilt: cms-medicare (CY2024 already included) and openpayments (PY2025
+already included; next refresh January 2027). ipeds-db: NCES moved its files
+and released 2024-25 and 2025-26 data; a datapond fork of the build pipeline
+(github.com/ian-nason/ipeds-database) now handles both, pending republication.
+
+Also this round: **datapond 0.1.3** (Python) fixes the README examples, the
+Hugging Face download filename for hyphenated ids, and makes `describe()`
+tolerant of contributed dictionaries; **datapond-r 0.1.0** is a new R client
+(github.com/datapond-db/datapond-r).
+
 ## 2026-07-06 — Full refresh + data-quality audit
 
 All five existing Nason-maintained databases were rebuilt from their latest
