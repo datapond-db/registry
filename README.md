@@ -31,6 +31,16 @@ con.sql("SELECT * FROM proceedings LIMIT 5").show()
 datapond.download('eoir')
 ```
 
+Or from R ([datapond-r](https://github.com/datapond-db/datapond-r)):
+
+```r
+pak::pak("datapond-db/datapond-r")
+library(datapond)
+dp_list()
+con <- dp_connect("eoir")
+DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
+```
+
 ## Available databases
 
 | Database | Rows | Tables | Size | Source |
@@ -84,6 +94,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a new database to the regi
 ## Links
 
 - **Python package:** [pypi.org/project/datapond](https://pypi.org/project/datapond/)
+- **R package:** [github.com/datapond-db/datapond-r](https://github.com/datapond-db/datapond-r)
 - **Website:** [datapond-db.github.io/website](https://datapond-db.github.io/website)
 - **GitHub org:** [github.com/datapond-db](https://github.com/datapond-db)
 
