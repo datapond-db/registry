@@ -24,9 +24,9 @@
       "id": "ice",
       "name": "ICE Enforcement Database",
       "description": "Individual-level records of ICE arrests, detainers, detentions, removals, encounters, and RCA decisions with linked anonymized IDs",
-      "rows": 22030619,
+      "rows": 23568538,
       "tables": 6,
-      "size_gb": 1.4,
+      "size_gb": 1.8,
       "source": "Deportation Data Project (FOIA litigation)",
       "source_url": "https://deportationdata.org",
       "github": "https://github.com/ian-nason/ice-database",
@@ -34,11 +34,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/ice-database/resolve/main/ice.duckdb",
       "dictionary_url": "https://github.com/ian-nason/ice-database/blob/main/DICTIONARY.md",
       "data_date_range": "2003-2026",
-      "last_rebuilt": "2026-07-06",
+      "last_rebuilt": "2026-09-14",
       "update_frequency": "Irregular (FOIA releases)",
       "maintainer": "Ian Nason",
       "license": "CC-0",
-      "updated": "2026-07-04"
+      "updated": "2026-09-14"
     },
     {
       "id": "fec",
