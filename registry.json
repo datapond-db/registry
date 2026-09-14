@@ -4,9 +4,9 @@
       "id": "eoir",
       "name": "EOIR Immigration Court Database",
       "description": "Every immigration court proceeding since the 1970s: hearings, charges, decisions, judges, representation, bond, appeals",
-      "rows": 169184982,
+      "rows": 173278686,
       "tables": 97,
-      "size_gb": 4.6,
+      "size_gb": 4.4,
       "source": "DOJ Executive Office for Immigration Review",
       "source_url": "https://www.justice.gov/eoir/foia-library-0",
       "github": "https://github.com/ian-nason/eoir-database",
@@ -14,11 +14,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/eoir-database/resolve/main/eoir.duckdb",
       "dictionary_url": "https://github.com/ian-nason/eoir-database/blob/main/DICTIONARY.md",
       "data_date_range": "1996-2026",
-      "last_rebuilt": "2026-07-06",
+      "last_rebuilt": "2026-09-14",
       "update_frequency": "Monthly",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-07-05"
+      "updated": "2026-09-14"
     },
     {
       "id": "ice",
