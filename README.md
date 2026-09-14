@@ -43,16 +43,16 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 
 ## Available databases
 
-| Database | Rows | Tables | Size | Source |
-|----------|------|--------|------|--------|
-| [eoir](https://github.com/ian-nason/eoir-database) | 169.2M | 97 | 4.6 GB | DOJ Executive Office for Immigration Review |
-| [ice](https://github.com/ian-nason/ice-database) | 22.0M | 6 | 1.4 GB | Deportation Data Project (FOIA litigation) |
-| [fec](https://github.com/ian-nason/fec-database) | 347.2M | 10 | 37.7 GB | Federal Election Commission |
-| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 58.0M | 48 | 6.6 GB | AACT / ClinicalTrials.gov |
-| [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132.9M | 3 | 13.0 GB | CMS Medicare Physician & Other Practitioners |
-| [openpayments](https://github.com/ian-nason/openpayments-database) | 172.5M | 6 | 17.5 GB | CMS Open Payments (Sunshine Act) |
-| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8.5M | 2 | 3.2 GB | DOL Office of Foreign Labor Certification |
-| [ipeds-db](https://github.com/paulgp/ipeds-database) | 26.7M | 23 | 1.1 GB | NCES Integrated Postsecondary Education Data System |
+| Database | Rows | Tables | Size | Coverage | Last rebuilt | Source |
+|----------|------|--------|------|----------|--------------|--------|
+| [eoir](https://github.com/ian-nason/eoir-database) | 173.3M | 97 | 4.4 GB | 1996-2026 | 2026-09-14 | DOJ Executive Office for Immigration Review |
+| [ice](https://github.com/ian-nason/ice-database) | 22.0M | 6 | 1.4 GB | 2003-2026 | 2026-07-06 | Deportation Data Project (FOIA litigation) |
+| [fec](https://github.com/ian-nason/fec-database) | 347.2M | 10 | 37.7 GB | 2004-2026 | 2026-07-06 | Federal Election Commission |
+| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59.0M | 48 | 7.1 GB | 2000-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
+| [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132.9M | 3 | 13.0 GB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
+| [openpayments](https://github.com/ian-nason/openpayments-database) | 172.5M | 6 | 17.5 GB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
+| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8.8M | 2 | 2.8 GB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
+| [ipeds-db](https://github.com/paulgp/ipeds-database) | 26.7M | 23 | 1.1 GB | 1997-2024 | 2026-03-19 | National Center for Education Statistics (NCES) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
