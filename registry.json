@@ -126,7 +126,7 @@
       "description": "Every H-1B/H-1B1/E-3 Labor Condition Application and PERM permanent labor certification disclosed by DOL OFLC: employer, job, SOC code, wages, worksite, case status, FY2015-present",
       "rows": 8812639,
       "tables": 2,
-      "size_gb": 2.7,
+      "size_gb": 2.8,
       "source": "DOL Office of Foreign Labor Certification disclosure files",
       "source_url": "https://www.dol.gov/agencies/eta/foreign-labor/performance",
       "github": "https://github.com/ian-nason/dol-visas-database",
