@@ -124,9 +124,9 @@
       "id": "dol-visas",
       "name": "DOL H-1B & PERM Labor Certification Database",
       "description": "Every H-1B/H-1B1/E-3 Labor Condition Application and PERM permanent labor certification disclosed by DOL OFLC: employer, job, SOC code, wages, worksite, case status, FY2015-present",
-      "rows": 8533076,
+      "rows": 8812639,
       "tables": 2,
-      "size_gb": 3.2,
+      "size_gb": 2.7,
       "source": "DOL Office of Foreign Labor Certification disclosure files",
       "source_url": "https://www.dol.gov/agencies/eta/foreign-labor/performance",
       "github": "https://github.com/ian-nason/dol-visas-database",
@@ -134,11 +134,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/dol-visas-database/resolve/main/dol_visas.duckdb",
       "dictionary_url": "https://github.com/ian-nason/dol-visas-database/blob/main/DICTIONARY.md",
       "data_date_range": "FY2015-FY2026",
-      "last_rebuilt": "2026-07-07",
+      "last_rebuilt": "2026-09-14",
       "update_frequency": "Quarterly (OFLC disclosure releases)",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-07-07"
+      "updated": "2026-09-14"
     },
     {
       "id": "ipeds-db",
