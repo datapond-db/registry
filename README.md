@@ -8,7 +8,7 @@ datapond is a collection of clean, queryable DuckDB databases built from messy p
 
 - **Reproducible** -- built from public source files with a scripted pipeline
 - **Queryable** -- stored as a single `.duckdb` file with documented tables
-- **Accessible** -- every database can be queried remotely in seconds with no download required, or downloaded locally for full speed
+- **Accessible** -- every database can be queried remotely in seconds with no full download (DuckDB fetches only the byte ranges a query needs), or downloaded locally for full speed
 - **Documented** -- includes a `_metadata` table and full README
 
 ## Quick start
@@ -23,7 +23,7 @@ import datapond
 # See what's available
 datapond.list()
 
-# Connect and query instantly (streams over HTTP, no download)
+# Connect and query instantly (attaches over HTTP; no full download)
 con = datapond.connect('eoir')
 con.sql("SELECT * FROM proceedings LIMIT 5").show()
 
@@ -50,7 +50,7 @@ See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
 The [`registry.json`](registry.json) file contains metadata for all databases. Each entry includes:
 
-- `id` -- short identifier used by the Python package
+- `id` -- short identifier used by the client packages (quote it in SQL if it contains a hyphen)
 - `name` -- human-readable name
 - `description` -- what the database contains
 - `rows`, `tables`, `size_gb` -- scale information
@@ -58,9 +58,24 @@ The [`registry.json`](registry.json) file contains metadata for all databases. E
 - `github` -- build repository
 - `huggingface` -- Hugging Face dataset page
 - `attach_url` -- direct URL for DuckDB remote attach
+- `dictionary_url` -- link to the database's `DICTIONARY.md`
+- `data_date_range` -- period the data covers (e.g. `2004-2026`, `FY2015-FY2026`)
+- `last_rebuilt` -- date the `.duckdb` file was last built (`YYYY-MM-DD`)
+- `update_frequency` -- how often the database is rebuilt (e.g. `Monthly`, `Quarterly`)
 - `maintainer` -- who maintains this database
 - `license` -- data license
-- `updated` -- last update date
+- `updated` -- last update date (clients compare this to a local copy's timestamp)
+
+The website renders `dictionary_url`, `data_date_range`, `last_rebuilt`, and `update_frequency` on every card, so please fill them in.
+
+## Contributors
+
+| Who | What |
+|-----|------|
+| [Ian Nason](https://github.com/ian-nason) | Registry, [Python client](https://github.com/datapond-db/datapond-python), [website](https://github.com/datapond-db/website), and the `eoir`, `ice`, `fec`, `clinicaltrials`, `cms-medicare`, `openpayments`, and `dol-visas` databases |
+| [Paul Goldsmith-Pinkham](https://github.com/paulgp) (`paulgp`, HF `paulgp85`) | The `ipeds-db` database |
+
+Each database's build repository is linked in the table above; the `maintainer` field in `registry.json` records who owns each entry.
 
 ## Contributing
 

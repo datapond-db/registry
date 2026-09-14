@@ -34,16 +34,19 @@ We recommend [uv](https://docs.astral.sh/uv/) for managing Python dependencies
 The final artifact is a single `.duckdb` file containing:
 
 - All data tables with appropriate types and constraints
-- A `_metadata` table with:
-  - `database_id` -- matches the registry ID
-  - `database_name` -- human-readable name
-  - `source` -- original data source
-  - `source_url` -- URL to the source
-  - `build_date` -- when this file was built
-  - `row_count` -- total rows across all tables
-  - `table_count` -- number of data tables
-  - `license` -- data license
-  - `version` -- build version string
+- A `_metadata` table with **one row per data table** (this is what
+  `datapond.describe()` and the website read):
+  - `table_name` -- the table this row describes
+  - `description` -- one-line description of the table
+  - `row_count` -- rows in that table
+  - `column_count` -- columns in that table
+  - `source_url` -- URL of the source data (optional but recommended)
+  - `license` -- data license (optional but recommended)
+  - `built_at` -- timestamp of the build (optional but recommended)
+
+  Database-level facts (id, name, source, build date, totals, license) live in
+  your `registry.json` entry, not in `_metadata`. `scripts/add_metadata.py`
+  (below) creates a conforming `_metadata` table for you if one is missing.
 - Clear, descriptive table and column names
 - A `_columns` data dictionary table (see below)
 
@@ -171,11 +174,21 @@ Add your database to the `databases` array in `registry.json`:
   "github": "https://github.com/your-user/your-repo",
   "huggingface": "https://huggingface.co/datasets/your-user/your-dataset",
   "attach_url": "https://huggingface.co/datasets/your-user/your-dataset/resolve/main/your-db.duckdb",
+  "dictionary_url": "https://github.com/your-user/your-repo/blob/main/DICTIONARY.md",
+  "data_date_range": "2009-2026",
+  "last_rebuilt": "2026-01-15",
+  "update_frequency": "Quarterly",
   "maintainer": "Your Name",
   "license": "Public domain",
   "updated": "2026-01-15"
 }
 ```
+
+Notes:
+
+- `id` is what users type into `datapond.connect("...")`. Keep it short and lowercase. If it contains a hyphen, SQL that references the database must double-quote it (`"your-db-id".table`).
+- `rows` is the sum over data tables only; `tables` counts data tables only (exclude `_metadata` and `_columns`).
+- `data_date_range` should reflect the data actually in the file, not the source's nominal coverage.
 
 ## Validation checklist
 
@@ -183,9 +196,14 @@ Include this checklist in your PR description:
 
 - [ ] `.duckdb` file loads without errors
 - [ ] Remote attach via httpfs works from the `attach_url`
-- [ ] `_metadata` table exists with all required fields
+- [ ] `_metadata` table exists with one row per data table (`table_name`, `description`, `row_count`, `column_count`)
+- [ ] `_columns` table exists (run `scripts/add_metadata.py`)
+- [ ] `datapond.describe("your-db-id")` prints your tables (test with a local registry override if the PR is not merged yet)
 - [ ] All tables have descriptive column names (no `col1`, `field_a`)
-- [ ] Row count in registry matches actual data
+- [ ] Row count in registry matches actual data (sum of data tables; `tables` excludes `_metadata`/`_columns`)
+- [ ] `data_date_range` matches the min/max dates actually in the file
+- [ ] README's quick-start example uses the exact registry `id`
+- [ ] Known data-quality caveats (dirty dates, suppression, double counting) are documented in the README
 - [ ] Build script is included in the GitHub repo and runs end-to-end
 - [ ] README includes table documentation and example queries
 - [ ] License is specified and accurate
