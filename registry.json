@@ -199,6 +199,26 @@
       "maintainer": "Ian Nason",
       "license": "CC-0",
       "updated": "2026-09-15"
+    },
+    {
+      "id": "ussc",
+      "name": "U.S. Sentencing Commission Offender Datafiles",
+      "description": "Every federal defendant sentenced FY2002-FY2025 from the U.S. Sentencing Commission's individual offender datafiles: demographics, offense, guideline range, sentence imposed and departures, with the 22,000-variable fixed-width record reshaped into a sentences table plus long tables per count of conviction, guideline computation, drug type and departure reason",
+      "rows": 13962089,
+      "tables": 9,
+      "size_gb": 0.7,
+      "source": "U.S. Sentencing Commission",
+      "source_url": "https://www.ussc.gov/research/datafiles/commission-datafiles",
+      "github": "https://github.com/ian-nason/ussc-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/ussc-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/ussc-database/resolve/main/ussc.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/ussc-database/blob/main/DICTIONARY.md",
+      "data_date_range": "FY2002-FY2025",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "Annual (each fiscal year's datafile, typically spring)",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-09-15"
     }
   ]
 }

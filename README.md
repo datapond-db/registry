@@ -55,6 +55,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27.9M | 23 | 1.3 GB | 1997-2025 | 2026-09-14 | National Center for Education Statistics (NCES) |
 | [fjc](https://github.com/ian-nason/fjc-database) | 21.1M | 3 | 2.5 GB | 1970-2026 | 2026-09-15 | Federal Judicial Center (Integrated Database) |
 | [cbp](https://github.com/ian-nason/cbp-database) | 51.3M | 8 | 1.6 GB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
+| [ussc](https://github.com/ian-nason/ussc-database) | 14.0M | 9 | 0.7 GB | FY2002-FY2025 | 2026-09-15 | U.S. Sentencing Commission |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
