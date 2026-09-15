@@ -179,6 +179,26 @@
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-09-15"
+    },
+    {
+      "id": "cbp",
+      "name": "CBP Border Enforcement Database",
+      "description": "Individual-level Customs and Border Protection records from Deportation Data Project FOIA releases: Border Patrol apprehensions (FY2008-Dec 2025) and apprehensions with place of birth (FY2000-FY2022), encounters, port-of-entry inadmissibility events (CY2014-Jan 2026), Title 42 expulsions, CBP One appointments",
+      "rows": 51345742,
+      "tables": 8,
+      "size_gb": 1.6,
+      "source": "Deportation Data Project (CBP FOIA releases)",
+      "source_url": "https://deportationdata.org/data/cbp.html",
+      "github": "https://github.com/ian-nason/cbp-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/cbp-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/cbp-database/resolve/main/cbp.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/cbp-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2000-2026",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "Irregular (FOIA releases)",
+      "maintainer": "Ian Nason",
+      "license": "CC-0",
+      "updated": "2026-09-15"
     }
   ]
 }
