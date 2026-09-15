@@ -52,7 +52,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132.9M | 3 | 13.0 GB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
 | [openpayments](https://github.com/ian-nason/openpayments-database) | 172.5M | 6 | 17.5 GB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
 | [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8.8M | 2 | 2.8 GB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
-| [ipeds-db](https://github.com/paulgp/ipeds-database) | 26.7M | 23 | 1.1 GB | 1997-2024 | 2026-03-19 | National Center for Education Statistics (NCES) |
+| [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27.9M | 23 | 1.3 GB | 1997-2025 | 2026-09-14 | National Center for Education Statistics (NCES) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
@@ -83,7 +83,7 @@ The website renders `dictionary_url`, `data_date_range`, `last_rebuilt`, and `up
 | Who | What |
 |-----|------|
 | [Ian Nason](https://github.com/ian-nason) | Registry, [Python client](https://github.com/datapond-db/datapond-python), [website](https://github.com/datapond-db/website), and the `eoir`, `ice`, `fec`, `clinicaltrials`, `cms-medicare`, `openpayments`, and `dol-visas` databases |
-| [Paul Goldsmith-Pinkham](https://github.com/paulgp) (`paulgp`, HF `paulgp85`) | The `ipeds-db` database |
+| [Paul Goldsmith-Pinkham](https://github.com/paulgp) (`paulgp`, HF `paulgp85`) | Build pipeline and original release of the `ipeds-db` database (the datapond copy is rebuilt from a fork) |
 
 Each database's build repository is linked in the table above; the `maintainer` field in `registry.json` records who owns each entry.
 

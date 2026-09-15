@@ -143,22 +143,22 @@
     {
       "id": "ipeds-db",
       "name": "IPEDS Database",
-      "description": "Database covering every U.S. postsecondary institution from 1997 to 2024—admissions, enrollment, completions, tuition, financial aid, graduation rates, staffing, and more",
-      "rows": 26739551,
+      "description": "Database covering every U.S. postsecondary institution from 1997 to the 2025-26 provisional release—admissions, enrollment, completions, tuition, financial aid, graduation rates, staffing, and more",
+      "rows": 27876978,
       "tables": 23,
-      "size_gb": 1.1,
+      "size_gb": 1.3,
       "source": "National Center for Education Statistics (NCES)",
       "source_url": "https://nces.ed.gov/ipeds/use-the-data",
-      "github": "https://github.com/paulgp/ipeds-database",
-      "huggingface": "https://huggingface.co/datasets/paulgp85/ipeds-db",
-      "attach_url": "https://huggingface.co/datasets/paulgp85/ipeds-db/resolve/main/ipeds.duckdb",
-      "dictionary_url": "https://github.com/paulgp/ipeds-database/blob/main/DICTIONARY.md",
-      "data_date_range": "1997-2024",
-      "last_rebuilt": "2026-03-19",
+      "github": "https://github.com/ian-nason/ipeds-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/ipeds-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/ipeds-database/resolve/main/ipeds.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/ipeds-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1997-2025",
+      "last_rebuilt": "2026-09-14",
       "update_frequency": "Annual",
-      "maintainer": "paulgp85",
+      "maintainer": "Ian Nason (build pipeline by Paul Goldsmith-Pinkham)",
       "license": "Public domain",
-      "updated": "2026-03-19"
+      "updated": "2026-09-14"
     }
   ]
 }

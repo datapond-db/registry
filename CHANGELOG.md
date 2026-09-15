@@ -2,7 +2,7 @@
 
 ## 2026-09-14 — September refresh
 
-Five databases rebuilt from their latest sources with the July audit's repairs
+Six databases rebuilt from their latest sources with the July audit's repairs
 now enforced as regression checks inside every build (a failing check aborts
 the publish). Per-database details are in each repo's CHANGELOG.md and on the
 HuggingFace dataset pages.
@@ -15,10 +15,10 @@ HuggingFace dataset pages.
 | dol-visas | 8.5M → 8.8M | FY2026 Q3 | **Fix:** date columns were 100% NULL since July (Excel serials); new-column guard |
 | fec | 347.2M → 354.9M | 2026 cycle (bulk files as of 2026-09-14) | 12-cycle coverage, date-parse rates, view semantics and conduit exclusion enforced at build; file 37.7 → 35.2 GB |
 
+| ipeds-db | 26.7M → 27.9M | 2025-26 provisional (fall) / 2024-25 (winter, spring) | NCES moved its files to `/ipeds/complete-data-files/`; rebuilt from a datapond fork of Paul Goldsmith-Pinkham's pipeline (github.com/ian-nason/ipeds-database) with a streaming loader; now hosted at `Nason/ipeds-database` |
+
 Not rebuilt: cms-medicare (CY2024 already included) and openpayments (PY2025
-already included; next refresh January 2027). ipeds-db: NCES moved its files
-and released 2024-25 and 2025-26 data; a datapond fork of the build pipeline
-(github.com/ian-nason/ipeds-database) now handles both, pending republication.
+already included; next refresh January 2027).
 
 Also this round: **datapond 0.1.3** (Python) fixes the README examples, the
 Hugging Face download filename for hyphenated ids, and makes `describe()`
