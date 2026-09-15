@@ -159,6 +159,26 @@
       "maintainer": "Ian Nason (build pipeline by Paul Goldsmith-Pinkham)",
       "license": "Public domain",
       "updated": "2026-09-14"
+    },
+    {
+      "id": "fjc",
+      "name": "FJC Integrated Database (Federal Courts)",
+      "description": "Every civil case (1988-present), criminal defendant (FY1970-present) and appeal (1971-present) reported by the federal courts to the Administrative Office, from the Federal Judicial Center's Integrated Database: parties, nature of suit, offenses, dispositions, sentences, dates, judges",
+      "rows": 21119023,
+      "tables": 3,
+      "size_gb": 2.5,
+      "source": "Federal Judicial Center (Integrated Database)",
+      "source_url": "https://www.fjc.gov/research/idb",
+      "github": "https://github.com/ian-nason/fjc-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/fjc-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/fjc-database/resolve/main/fjc.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/fjc-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1970-2026",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "Quarterly (FJC extracts)",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-09-15"
     }
   ]
 }

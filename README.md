@@ -53,6 +53,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [openpayments](https://github.com/ian-nason/openpayments-database) | 172.5M | 6 | 17.5 GB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
 | [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8.8M | 2 | 2.8 GB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
 | [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27.9M | 23 | 1.3 GB | 1997-2025 | 2026-09-14 | National Center for Education Statistics (NCES) |
+| [fjc](https://github.com/ian-nason/fjc-database) | 21.1M | 3 | 2.5 GB | 1970-2026 | 2026-09-15 | Federal Judicial Center (Integrated Database) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
