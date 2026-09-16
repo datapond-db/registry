@@ -42,7 +42,9 @@ def main():
     con.close()
     old = {k: entry[k] for k in ("rows", "tables", "size_gb", "data_date_range", "last_rebuilt", "updated")}
     entry["rows"] = int(rows); entry["tables"] = int(n_tables)
-    entry["size_gb"] = round(a.db.stat().st_size / 1024**3, 1)
+    size_gb = a.db.stat().st_size / 1024**3
+    # one decimal for normal files; small files keep enough precision not to display as 0.0 GB
+    entry["size_gb"] = round(size_gb, 1) if size_gb >= 0.1 else round(size_gb, 3)
     if rng: entry["data_date_range"] = rng
     entry["last_rebuilt"] = a.date; entry["updated"] = a.date
     text = json.dumps(reg, indent=2, ensure_ascii=False) + "\n"
