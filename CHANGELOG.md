@@ -1,5 +1,53 @@
 # Datapond Changelog
 
+## 2026-09-16 — Response to the September 15 public audit
+
+An independent audit of all 19 public repositories and 14 published databases (5 P1 and
+11 P2 findings) was answered in full. Data rows did not change; two published files were
+republished with corrected views, and every client and builder gained the controls the
+audit asked for.
+
+**Clients**
+- `datapond` 0.1.4 (Python): downloads stream to a temporary file and replace the
+  destination only after the file verifies as DuckDB, so a failed download never damages
+  an existing copy; `update()` compares the remote file's ETag/size with the identity
+  recorded at download time instead of the file's modification time; `connect()` returns
+  the native DuckDB connection (pandas replacement scans work); paths with apostrophes
+  are quoted; `--path some/dir/` creates the directory. Offline test suite added.
+- `datapond` 0.1.1 (R): a partial download is resumed only while the remote revision is
+  unchanged (ETag/size/Last-Modified recorded beside the `.part` file); the finished file
+  is validated and a failed replacement is an error; `dp_update()` uses the recorded file
+  identity; the registry is decoded as UTF-8 explicitly (works in a C locale).
+- `datapond-build` 0.1.3: atomic `os.replace` downloads, `refresh="if-changed"` with a
+  sidecar identity, column statistics in batches, HF `license_name`/`license_link`.
+
+**Databases**
+- fjc: `v_criminal_by_year` grouped on `FISCALYR` only and put 1.42M 1970-95 defendants in
+  a NULL year; it now uses the harmonised `fiscal_year` (era-specific offense codes kept
+  apart) and the build asserts the view reconciles with the table. Civil rows are
+  documented as case records (reopenings carry `ORIGIN` 4-7), not unique cases.
+- ussc: the quick starts averaged raw `TOTPRISN`, whose 9992/9996/9997/9998 are codes
+  (under a day / life / no term stated / death); `v_sentence_terms` separates them and
+  the examples use it.
+- scdb: the README's majority-share example did not run (`AVG(BOOLEAN)`); fixed and its
+  population labelled honestly.
+- cbp: `refresh_releases.py` regenerates the file manifest from the DDP page; tiling
+  counts in the README now come from `_files` (19 base / 23 superseded).
+- eoir: README validation numbers current (charge lookup 99.997%); coverage 1990-2026.
+- Source refresh vs resume: eoir, fec and dol-visas re-download a cached source file when
+  the server's ETag/Last-Modified/size differs from the one recorded at download time
+  (eoir discards the old extraction); openpayments reloads a program year whose source
+  file changed (`_sources`); `DATAPOND_REFRESH=skip` keeps the old resume behaviour.
+- ipeds: a missing required survey year now fails the build; `_columns` is built in the
+  pipeline; ZIP/OPEID/EIN/FIPS identifiers are never numeric-typed.
+- Download scripts (fjc-judges, scdb, cook-sao, ussc, cbp) create `data/raw`, fail on
+  HTTP errors and exit non-zero.
+- HF card licenses now match the registry (public domain / CC0), and sub-0.1 GB sizes
+  render in MB; `scripts/add_metadata.py` delegates to datapond-build and refreshes
+  counts on rerun.
+- The quick-start gate (`tools/run_quickstarts.py`) now binds every SQL statement in
+  every dataset README against the live schema.
+
 ## 2026-09-15 — Six legal-system databases: fjc, cbp, ussc, cook-sao, scdb, fjc-judges
 
 New databases, all built with [datapond-build](https://github.com/datapond-db/datapond-build)

@@ -174,11 +174,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/fjc-database/resolve/main/fjc.duckdb",
       "dictionary_url": "https://github.com/ian-nason/fjc-database/blob/main/DICTIONARY.md",
       "data_date_range": "1970-2026",
-      "last_rebuilt": "2026-09-15",
+      "last_rebuilt": "2026-09-16",
       "update_frequency": "Quarterly (FJC extracts)",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-09-15"
+      "updated": "2026-09-16"
     },
     {
       "id": "cbp",
@@ -214,11 +214,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/ussc-database/resolve/main/ussc.duckdb",
       "dictionary_url": "https://github.com/ian-nason/ussc-database/blob/main/DICTIONARY.md",
       "data_date_range": "FY2002-FY2025",
-      "last_rebuilt": "2026-09-15",
+      "last_rebuilt": "2026-09-16",
       "update_frequency": "Annual (each fiscal year's datafile, typically spring)",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-09-15"
+      "updated": "2026-09-16"
     },
     {
       "id": "cook-sao",
