@@ -73,8 +73,10 @@ change.
   the transfer). The download, resume and revision-change paths are exercised against a
   real loopback HTTP server in the test suite, and the public fjc-judges download was
   re-run end to end.
-- openpayments: a replacement year must also map and parse its required columns
-  (record id, amounts, payment date) before it can replace the loaded one; a renamed
+- openpayments: a replacement year must also map and parse its required columns before
+  it can replace the loaded one: `record_id` (no NULLs) in every table, payment amounts
+  (at most 0.1% NULL for general and research payments, 1% for ownership investment
+  amounts) and, for general payments, `date_of_payment` (at most 1% NULL). A renamed
   header or unparseable amounts are rejected and the existing year kept.
 
 ## 2026-09-15 — Six legal-system databases: fjc, cbp, ussc, cook-sao, scdb, fjc-judges
