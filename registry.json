@@ -239,6 +239,46 @@
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-09-15"
+    },
+    {
+      "id": "fjc-judges",
+      "name": "Federal Judges Biographical Directory (FJC)",
+      "description": "Every Article III federal judge since 1789 from the Federal Judicial Center's Biographical Directory: demographics, every appointment with its nomination, confirmation and commission dates, chief-judge and senior-status dates, education, professional career and other federal judicial service",
+      "rows": 37768,
+      "tables": 6,
+      "size_gb": 0.0,
+      "source": "Federal Judicial Center (Biographical Directory of Article III Federal Judges)",
+      "source_url": "https://www.fjc.gov/history/judges/biographical-directory-article-iii-federal-judges-export",
+      "github": "https://github.com/ian-nason/fjc-judges-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/fjc-judges-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/fjc-judges-database/resolve/main/fjc-judges.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/fjc-judges-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1789-2026",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "Continuous at the FJC; rebuilt with each datapond refresh",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-09-15"
+    },
+    {
+      "id": "scdb",
+      "name": "Supreme Court Database (SCDB)",
+      "description": "Every U.S. Supreme Court decision 1791-present from the Supreme Court Database (Washington University): case-level and justice-level rows with dates, citations, parties, issue, decision direction, disposition, votes and opinions, plus the full code book as a table",
+      "rows": 677452,
+      "tables": 9,
+      "size_gb": 0.1,
+      "source": "The Supreme Court Database (Washington University in St. Louis)",
+      "source_url": "http://scdb.wustl.edu/data.php",
+      "github": "https://github.com/ian-nason/scdb-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/scdb-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/scdb-database/resolve/main/scdb.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/scdb-database/blob/main/DICTIONARY.md",
+      "data_date_range": "1791-2026",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "Annual (SCDB releases each fall)",
+      "maintainer": "Ian Nason",
+      "license": "CC BY-NC 3.0",
+      "updated": "2026-09-15"
     }
   ]
 }
