@@ -3,9 +3,11 @@
 ## 2026-09-16 — Response to the September 15 public audit
 
 An independent audit of all 19 public repositories and 14 published databases (5 P1 and
-11 P2 findings) was answered in full. Data rows did not change; two published files were
-republished with corrected views, and every client and builder gained the controls the
-audit asked for.
+11 P2 findings) was addressed in source and, for the two databases below, in the published
+files. Its 2026-09-16 recheck found the catalogs still reconcile and 59/59 README SQL
+statements bind, and reported the remaining gaps, which are fixed in the follow-up section
+below; the Python client fixes reach users only once 0.1.4 is on PyPI. Data rows did not
+change.
 
 **Clients**
 - `datapond` 0.1.4 (Python): downloads stream to a temporary file and replace the
@@ -47,6 +49,22 @@ audit asked for.
   counts on rerun.
 - The quick-start gate (`tools/run_quickstarts.py`) now binds every SQL statement in
   every dataset README against the live schema.
+
+**Follow-up to the 2026-09-16 recheck**
+- ussc: `TOTPRISN = 0` means "no prison or under one month", not "no prison";
+  `v_sentence_terms` labels it so and adds `prison_imposed` from `PRISDUM`, which the
+  incidence example now uses (FY2025: 92.3% with a prison sentence, not 66.8%).
+  Republished.
+- R client: a resume is bound to a strong validator with `If-Range`, the GET response's
+  validator is checked (a file that changes between HEAD and GET is re-downloaded from
+  scratch), size alone never proves freshness, and a directory at the destination is
+  rejected. Python client: the same validator rules for `update()` and the HEAD/GET check.
+- openpayments: a year refresh loads into a staging table, rejects an empty or shrunken
+  replacement, and swaps the partition in a transaction, so a bad source cannot erase a
+  year.
+- `scripts/add_metadata.py` imports from `datapond_build.metadata` (it could not import);
+  datapond-build 0.1.4 exports `user_tables`. Exercised twice through the CLI.
+- scdb's download script lists the ten files that exist (no 404s on legacy units).
 
 ## 2026-09-15 — Six legal-system databases: fjc, cbp, ussc, cook-sao, scdb, fjc-judges
 

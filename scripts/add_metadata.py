@@ -6,7 +6,7 @@ layout the clients expect. Safe to re-run: existing row counts are refreshed, ta
 longer exist are dropped from `_metadata`, and `_columns` is rebuilt.
 
 Usage:
-    pip install "datapond-build @ git+https://github.com/datapond-db/datapond-build@v0.1.2"
+    pip install "datapond-build @ git+https://github.com/datapond-db/datapond-build@v0.1.4"
     python scripts/add_metadata.py path/to/database.duckdb [--source-url URL] [--license TEXT]
         [--description table=text ...] [--join-hint column=text ...] [--dictionary DICTIONARY.md]
 
@@ -20,9 +20,9 @@ from pathlib import Path
 import duckdb
 
 try:
-    from datapond_build import build_columns_table, ensure_metadata, export_dictionary, user_tables
+    from datapond_build.metadata import build_columns_table, ensure_metadata, export_dictionary, user_tables
 except ImportError:
-    sys.exit("datapond-build is required: pip install 'datapond-build @ git+https://github.com/datapond-db/datapond-build@v0.1.2'")
+    sys.exit("datapond-build is required: pip install 'datapond-build @ git+https://github.com/datapond-db/datapond-build@v0.1.4'")
 
 
 def kv(pairs):
