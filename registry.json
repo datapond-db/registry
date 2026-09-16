@@ -219,6 +219,26 @@
       "maintainer": "Ian Nason",
       "license": "Public domain",
       "updated": "2026-09-15"
+    },
+    {
+      "id": "cook-sao",
+      "name": "Cook County State's Attorney Felony Cases",
+      "description": "Every felony case received by the Cook County (Chicago) State's Attorney's Office 2011 through 2024-12-30 (the series is closed), charge by charge: intake and felony review, initiation with statute/class/bond, dispositions with judge and court, sentences, and diversion referrals",
+      "rows": 3171690,
+      "tables": 5,
+      "size_gb": 0.4,
+      "source": "Cook County State's Attorney's Office (county open-data portal)",
+      "source_url": "https://datacatalog.cookcountyil.gov/browse?q=State%27s%20Attorney",
+      "github": "https://github.com/ian-nason/cook-sao-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/cook-sao-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/cook-sao-database/resolve/main/cook-sao.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/cook-sao-database/blob/main/DICTIONARY.md",
+      "data_date_range": "2011-2024",
+      "last_rebuilt": "2026-09-15",
+      "update_frequency": "None (series closed by the SAO on 2024-12-30)",
+      "maintainer": "Ian Nason",
+      "license": "Public domain",
+      "updated": "2026-09-15"
     }
   ]
 }

@@ -56,6 +56,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [fjc](https://github.com/ian-nason/fjc-database) | 21.1M | 3 | 2.5 GB | 1970-2026 | 2026-09-15 | Federal Judicial Center (Integrated Database) |
 | [cbp](https://github.com/ian-nason/cbp-database) | 51.3M | 8 | 1.6 GB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
 | [ussc](https://github.com/ian-nason/ussc-database) | 14.0M | 9 | 0.7 GB | FY2002-FY2025 | 2026-09-15 | U.S. Sentencing Commission |
+| [cook-sao](https://github.com/ian-nason/cook-sao-database) | 3.2M | 5 | 0.4 GB | 2011-2024 | 2026-09-15 | Cook County State's Attorney's Office (county open-data portal) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 

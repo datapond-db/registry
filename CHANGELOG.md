@@ -1,15 +1,16 @@
 # Datapond Changelog
 
-## 2026-09-15 — Three legal-system databases: fjc, cbp, ussc
+## 2026-09-15 — Four legal-system databases: fjc, cbp, ussc, cook-sao
 
 New databases, all built with [datapond-build](https://github.com/datapond-db/datapond-build)
 and the same regression-check discipline as the September refresh. The registry now
-lists 11 databases and 1.04B rows:
+lists 12 databases and 1.04B rows:
 
 | Database | Rows | Coverage | What it is |
 |----------|-----:|----------|------------|
 | fjc | 21.1M | 1970-2026 | Federal Judicial Center Integrated Database: every federal civil case (1988+), criminal defendant (FY1970+) and appeal (1971+). Two file eras per table unioned by column name; invalid source dates audited; 638 malformed civil rows (0.006%) skipped and counted. Bankruptcy is not published in bulk by the FJC. |
 | cbp | 51.3M | 2000-2026 | Deportation Data Project CBP FOIA releases: Border Patrol apprehensions, apprehensions with place of birth, encounters, OFO inadmissibility events, Title 42 expulsions, CBP One. 121 heterogeneous xlsx files harmonised through a header crosswalk; overlapping inadmissibles releases tiled into a base table plus `inadmissibles_superseded`; `_files` documents every source file. |
+| cook-sao | 3.2M | 2011-2024 | Cook County (Chicago) State's Attorney felony cases, charge by charge: intake/felony review, initiation with statute, class and bond, dispositions with judge and court, sentences, diversion referrals. The Office closed the series on 2024-12-30, so this is a complete, fixed dataset. Typed from the portal's own column metadata; co-defendants share charge ids; dispositions and sentencing reach back to cases received before 2011. |
 | ussc | 14.0M | FY2002-FY2025 | U.S. Sentencing Commission individual offender datafiles: 1,720,684 sentenced defendants (per-year counts match the Commission's Sourcebook); the 22,000-variable fixed-width layout reshaped into `sentences` plus long tables per count of conviction, guideline computation, drug type and departure reason. Datapond-build 0.1.1 batches column statistics so 500-column tables fit in a 3 GB build. |
 
 Also: `datapond-python` and `datapond-r` `describe()` now tolerate contributed
