@@ -73,6 +73,10 @@ change.
   the transfer). The download, resume and revision-change paths are exercised against a
   real loopback HTTP server in the test suite, and the public fjc-judges download was
   re-run end to end.
+- R client (F19 of the auditor's final check): the identity probe used when a server's
+  HEAD carries no validator reads one byte through a connection and closes it, so a server
+  that ignores `Range` can no longer make the client buffer the whole database in memory.
+  Loopback tests cover HEAD 405 and ignored Range with a memory-profiling assertion.
 - openpayments: a replacement year must also map and parse its required columns before
   it can replace the loaded one: `record_id` (no NULLs) in every table, payment amounts
   (at most 0.1% NULL for general and research payments, 1% for ownership investment
