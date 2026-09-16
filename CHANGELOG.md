@@ -66,6 +66,17 @@ change.
   datapond-build 0.1.4 exports `user_tables`. Exercised twice through the CLI.
 - scdb's download script lists the ten files that exist (no 404s on legacy units).
 
+**Follow-up to the 2026-09-16 third-round audit**
+- R client: real downloads failed (F17) because curl returns response headers as a
+  vector of lines; fixed, together with two resume defects (a 206 response's length is
+  only the remaining range; a stale `If-Range` answered with the whole file now restarts
+  the transfer). The download, resume and revision-change paths are exercised against a
+  real loopback HTTP server in the test suite, and the public fjc-judges download was
+  re-run end to end.
+- openpayments: a replacement year must also map and parse its required columns
+  (record id, amounts, payment date) before it can replace the loaded one; a renamed
+  header or unparseable amounts are rejected and the existing year kept.
+
 ## 2026-09-15 — Six legal-system databases: fjc, cbp, ussc, cook-sao, scdb, fjc-judges
 
 New databases, all built with [datapond-build](https://github.com/datapond-db/datapond-build)
