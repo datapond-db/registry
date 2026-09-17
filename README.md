@@ -59,6 +59,8 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [cook-sao](https://github.com/ian-nason/cook-sao-database) | 3.2M | 5 | 0.4 GB | 2011-2024 | 2026-09-15 | Cook County State's Attorney's Office (county open-data portal) |
 | [fjc-judges](https://github.com/ian-nason/fjc-judges-database) | 37.8K | 6 | 0.003 GB | 1789-2026 | 2026-09-15 | Federal Judicial Center (Biographical Directory of Article III Federal Judges) |
 | [scdb](https://github.com/ian-nason/scdb-database) | 677.5K | 9 | 0.1 GB | 1791-2026 | 2026-09-15 | The Supreme Court Database (Washington University in St. Louis) |
+| [open-policing](https://github.com/ian-nason/open-policing-database) | 230.0M | 2 | 8.1 GB | 2000-2020 | 2026-09-16 | Stanford Open Policing Project |
+| [courtlistener](https://github.com/ian-nason/courtlistener-database) | 1.2M | 20 | 0.085 GB | 1789-2025 | 2026-09-16 | Free Law Project (CourtListener bulk data) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 

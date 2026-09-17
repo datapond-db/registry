@@ -1,5 +1,18 @@
 # Datapond Changelog
 
+## 2026-09-17 — Two national databases: open-policing, courtlistener
+
+| Database | Rows | Coverage | What it is |
+|----------|-----:|----------|------------|
+| open-policing | 230.0M | 2000-2020 | Stanford Open Policing Project: every standardized stop from 35 state patrols and 53 city/county departments in one `stops` table (standardized columns typed, location-specific `raw_*` columns kept as text), a `locations` table with each file's observed and readme-stated coverage and data notes, and a per-location-year view. ODC-By 1.0. |
+| courtlistener | 1.2M | 1789-2025 | CourtListener bulk data that is still exported: the judge database (judges, positions, education, party, race), 3,353 courts, and 32,336 federal judicial financial disclosure reports with their line items, typed from CourtListener's own schema; `judges.fjc_id` joins `fjc-judges.judges.jid`. The docket, opinion and investment exports have been stubs since March 2024 and are not included. |
+
+The registry now lists 16 databases and 1.27B rows.
+
+Not added: the Caselaw Access Project, which is already on Hugging Face as a text corpus
+(free-law and common-pile); a metadata layer may follow. NLRB has no bulk case-level
+export.
+
 ## 2026-09-16 — Response to the September 15 public audit
 
 An independent audit of all 19 public repositories and 14 published databases (5 P1 and
