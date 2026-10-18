@@ -24,7 +24,7 @@ def render(reg):
              "|----------|------|--------|------|----------|--------------|--------|"]
     for d in reg["databases"]:
         lines.append(
-            f"| [{d['id']}]({d['github']}) | {fmt_rows(d['rows'])} | {d['tables']} | {d['size_gb']} GB "
+            f"| [{d['id']}]({d['github']}) | {fmt_rows(d['rows'])} | {d['tables']} | {d['size_gb']} GiB "
             f"| {d.get('data_date_range', '')} | {d.get('last_rebuilt', '')} | {d['source']} |")
     return "\n".join(lines)
 
