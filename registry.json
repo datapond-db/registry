@@ -244,7 +244,7 @@
       "id": "fjc-judges",
       "name": "Federal Judges Biographical Directory (FJC)",
       "description": "Every Article III federal judge since 1789 from the Federal Judicial Center's Biographical Directory: demographics, every appointment with its nomination, confirmation and commission dates, chief-judge and senior-status dates, education, professional career and other federal judicial service",
-      "rows": 37768,
+      "rows": 37797,
       "tables": 6,
       "size_gb": 0.003,
       "source": "Federal Judicial Center (Biographical Directory of Article III Federal Judges)",
@@ -254,11 +254,11 @@
       "attach_url": "https://huggingface.co/datasets/Nason/fjc-judges-database/resolve/main/fjc-judges.duckdb",
       "dictionary_url": "https://github.com/ian-nason/fjc-judges-database/blob/main/DICTIONARY.md",
       "data_date_range": "1789-2026",
-      "last_rebuilt": "2026-09-15",
+      "last_rebuilt": "2026-10-17",
       "update_frequency": "Continuous at the FJC; rebuilt with each datapond refresh",
       "maintainer": "Ian Nason",
       "license": "Public domain",
-      "updated": "2026-09-15"
+      "updated": "2026-10-17"
     },
     {
       "id": "scdb",
