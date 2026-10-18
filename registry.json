@@ -339,6 +339,26 @@
       "maintainer": "Ian Nason",
       "license": "CC-BY-4.0",
       "updated": "2026-10-18"
+    },
+    {
+      "id": "qcew",
+      "name": "QCEW 2025 Annual Employment and Wages",
+      "description": "Complete 2025 annual QCEW employment, establishment and wage records, exact source flags, version-matched dictionaries and a disclosure-aware view. Nested geographies/industries/ownership totals require explicit filtering.",
+      "rows": 3096467,
+      "tables": 6,
+      "size_gb": 0.18214,
+      "source": "U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages",
+      "source_url": "https://www.bls.gov/cew/downloadable-data-files.htm",
+      "github": "https://github.com/ian-nason/qcew-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/qcew-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/qcew-database/resolve/334c467dba413928233fb1d8cd1c0ff8de5c0105/qcew.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/qcew-database/blob/e355b3744a09c5389783402be378f508acf0d4f5/DICTIONARY.md",
+      "data_date_range": "2025 annual; snapshot acquired 2026-10-18",
+      "last_rebuilt": "2026-10-18",
+      "update_frequency": "Annual snapshot; BLS revises source files; manual pinned rebuilds",
+      "maintainer": "Ian Nason",
+      "license": "Public domain (U.S. Bureau of Labor Statistics)",
+      "updated": "2026-10-18"
     }
   ]
 }

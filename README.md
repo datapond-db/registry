@@ -62,6 +62,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [open-policing](https://github.com/ian-nason/open-policing-database) | 230.0M | 2 | 8.1 GiB | 2000-2020 | 2026-09-16 | Stanford Open Policing Project |
 | [courtlistener](https://github.com/ian-nason/courtlistener-database) | 2.3M | 20 | 3.028 GiB | 0022-3036 (source date outliers; see README) | 2026-10-18 | Free Law Project (CourtListener bulk data) |
 | [onet](https://github.com/ian-nason/onet-database) | 468.9K | 12 | 0.010509 GiB | 31.0 snapshot; rating update months 2005-12–2026-08 | 2026-10-18 | U.S. Department of Labor, Employment and Training Administration (O*NET) |
+| [qcew](https://github.com/ian-nason/qcew-database) | 3.1M | 6 | 0.18214 GiB | 2025 annual; snapshot acquired 2026-10-18 | 2026-10-18 | U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
