@@ -302,23 +302,23 @@
     },
     {
       "id": "courtlistener",
-      "name": "CourtListener Judges and Financial Disclosures",
-      "description": "CourtListener's bulk judge database (16,190 judges with positions, education, party affiliations and race), its registry of 3,353 courts, and 32,336 federal judicial financial disclosure reports with gifts, debts, reimbursements, agreements, positions and income line items; judges join the FJC biographical directory on fjc_id",
-      "rows": 1238528,
+      "name": "CourtListener Judges, Disclosures and Oral Arguments",
+      "description": "September 30, 2026 CourtListener snapshot: 16,191 judge-database people, 51,291 positions, 3,361 courts, 32,336 financial disclosure reports (1987-2022), and 103,710 oral-argument records including source speech-to-text transcripts; judges join the FJC directory on fjc_id",
+      "rows": 2277934,
       "tables": 20,
-      "size_gb": 0.085,
+      "size_gb": 3.028,
       "source": "Free Law Project (CourtListener bulk data)",
       "source_url": "https://www.courtlistener.com/help/api/bulk-data/",
       "github": "https://github.com/ian-nason/courtlistener-database",
       "huggingface": "https://huggingface.co/datasets/Nason/courtlistener-database",
       "attach_url": "https://huggingface.co/datasets/Nason/courtlistener-database/resolve/main/courtlistener.duckdb",
       "dictionary_url": "https://github.com/ian-nason/courtlistener-database/blob/main/DICTIONARY.md",
-      "data_date_range": "1789-2025",
-      "last_rebuilt": "2026-09-16",
-      "update_frequency": "With CourtListener's bulk exports (last 2025-01-31)",
+      "data_date_range": "0022-3036 (source date outliers; see README)",
+      "last_rebuilt": "2026-10-18",
+      "update_frequency": "Quarterly (latest source snapshot 2026-09-30)",
       "maintainer": "Ian Nason",
-      "license": "Public records (CourtListener)",
-      "updated": "2026-09-16"
+      "license": "Public Domain Mark (CourtListener bulk data)",
+      "updated": "2026-10-18"
     }
   ]
 }
