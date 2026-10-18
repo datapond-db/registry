@@ -12,8 +12,10 @@ suppression, and FARS covers fatal crashes only. ATUS remains pending source acc
 Refreshed metadata records FEC's 2004–2026 release, the October 17 FJC judges build,
 and CourtListener's September 30 bulk snapshot including oral arguments. Install
 the released R client from CRAN; development downloader fixes are separate from
-that released version. Registry `size_gb` follows the existing updater's GiB
-(bytes / 1024³) convention; the generated table labels that unit explicitly.
+that released version. Registry `size_gb` uses the existing updater's GiB
+(bytes / 1024³) unit; the generated table labels it explicitly. The new entries
+retain six decimal places for small-artifact size precision; the updater may
+round these values more coarsely on a future refresh.
 
 ## 2026-09-17 — Two national databases: open-policing, courtlistener
 

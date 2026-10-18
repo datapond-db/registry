@@ -74,7 +74,7 @@ The [`registry.json`](registry.json) file contains metadata for all databases. E
 - `id` -- short identifier used by the client packages (quote it in SQL if it contains a hyphen)
 - `name` -- human-readable name
 - `description` -- what the database contains
-- `rows`, `tables`, `size_gb` -- scale information
+- `rows`, `tables`, `size_gb` (in GiB) -- scale information
 - `source`, `source_url` -- original data source
 - `github` -- build repository
 - `huggingface` -- Hugging Face dataset page
