@@ -63,6 +63,7 @@ DBI::dbGetQuery(con, "SELECT * FROM proceedings LIMIT 5")
 | [courtlistener](https://github.com/ian-nason/courtlistener-database) | 2.3M | 20 | 3.028 GiB | 0022-3036 (source date outliers; see README) | 2026-10-18 | Free Law Project (CourtListener bulk data) |
 | [onet](https://github.com/ian-nason/onet-database) | 468.9K | 12 | 0.010509 GiB | 31.0 snapshot; rating update months 2005-12–2026-08 | 2026-10-18 | U.S. Department of Labor, Employment and Training Administration (O*NET) |
 | [qcew](https://github.com/ian-nason/qcew-database) | 3.1M | 6 | 0.18214 GiB | 2025 annual; snapshot acquired 2026-10-18 | 2026-10-18 | U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages |
+| [fars](https://github.com/ian-nason/fars-database) | 190.8K | 4 | 0.02467 GiB | 2024 Annual Report File; first release 2026-04-01 | 2026-10-18 | NHTSA National Center for Statistics and Analysis, Fatality Analysis Reporting System |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
@@ -73,7 +74,7 @@ The [`registry.json`](registry.json) file contains metadata for all databases. E
 - `id` -- short identifier used by the client packages (quote it in SQL if it contains a hyphen)
 - `name` -- human-readable name
 - `description` -- what the database contains
-- `rows`, `tables`, `size_gb` -- scale information
+- `rows`, `tables`, `size_gb` (in GiB) -- scale information
 - `source`, `source_url` -- original data source
 - `github` -- build repository
 - `huggingface` -- Hugging Face dataset page

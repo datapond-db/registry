@@ -359,6 +359,26 @@
       "maintainer": "Ian Nason",
       "license": "Public domain (U.S. Bureau of Labor Statistics)",
       "updated": "2026-10-18"
+    },
+    {
+      "id": "fars",
+      "name": "FARS 2024 National Annual Report File",
+      "description": "NHTSA fatal crashes, vehicles and people in the pinned 2024 national ARF; preserved missing codes, observed dictionaries and crash summaries that prevent join inflation. Fatal crashes only; no exposure denominator.",
+      "rows": 190798,
+      "tables": 4,
+      "size_gb": 0.02467,
+      "source": "NHTSA National Center for Statistics and Analysis, Fatality Analysis Reporting System",
+      "source_url": "https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars",
+      "github": "https://github.com/ian-nason/fars-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/fars-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/fars-database/resolve/adb6da02a314c39d8b6caf776529bf4a373075da/fars.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/fars-database/blob/429596dd3a820a60c562ea631eb787e9c5d37569/DICTIONARY.md",
+      "data_date_range": "2024 Annual Report File; first release 2026-04-01",
+      "last_rebuilt": "2026-10-18",
+      "update_frequency": "Annual source with ARF/final revisions; manual pinned rebuilds",
+      "maintainer": "Ian Nason",
+      "license": "NHTSA public information; copying/distribution permitted by official Ownership policy",
+      "updated": "2026-10-18"
     }
   ]
 }
