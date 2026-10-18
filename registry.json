@@ -319,6 +319,26 @@
       "maintainer": "Ian Nason",
       "license": "Public records (CourtListener)",
       "updated": "2026-09-16"
+    },
+    {
+      "id": "onet",
+      "name": "O*NET 31.0 Occupations, Skills and Work Context",
+      "description": "Versioned O*NET 31.0 subset: occupation titles, essential and transferable skill ratings, work-context means and category percentages, uncertainty flags and dictionaries. One release snapshot; not an annual panel.",
+      "rows": 468857,
+      "tables": 12,
+      "size_gb": 0.011284,
+      "source": "U.S. Department of Labor, Employment and Training Administration (O*NET)",
+      "source_url": "https://www.onetcenter.org/database.html",
+      "github": "https://github.com/ian-nason/onet-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/onet-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/onet-database/resolve/d0e84bacef02d4477423edbf7468cc3ec8fb79c2/onet.duckdb",
+      "dictionary_url": "https://github.com/ian-nason/onet-database/blob/5ea8ac19db5246ee6641c082a26acc0fbf544ac2/DICTIONARY.md",
+      "data_date_range": "31.0 snapshot; rating update months 2005-12\u20132026-08",
+      "last_rebuilt": "2026-10-18",
+      "update_frequency": "Quarterly source releases; manual version-pinned rebuilds",
+      "maintainer": "Ian Nason",
+      "license": "CC-BY-4.0",
+      "updated": "2026-10-18"
     }
   ]
 }
