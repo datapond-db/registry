@@ -19,12 +19,18 @@ def fmt_rows(n):
     return f"{n / 1e9:.2f}B" if n >= 1e9 else f"{n / 1e6:.1f}M" if n >= 1e6 else f"{n / 1e3:.1f}K"
 
 
+def fmt_size(gib):
+    if gib < 1 and gib != round(gib, 1):
+        return f"{gib * 1024:.1f} MiB"
+    return f"{gib:.1f} GiB" if gib < 1 else f"{gib:.2f} GiB"
+
+
 def render(reg):
     lines = ["| Database | Rows | Tables | Size | Coverage | Last rebuilt | Source |",
              "|----------|------|--------|------|----------|--------------|--------|"]
     for d in reg["databases"]:
         lines.append(
-            f"| [{d['id']}]({d['github']}) | {fmt_rows(d['rows'])} | {d['tables']} | {d['size_gb']} GiB "
+            f"| [{d['id']}]({d['github']}) | {fmt_rows(d['rows'])} | {d['tables']} | {fmt_size(d['size_gb'])} "
             f"| {d.get('data_date_range', '')} | {d.get('last_rebuilt', '')} | {d['source']} |")
     return "\n".join(lines)
 
