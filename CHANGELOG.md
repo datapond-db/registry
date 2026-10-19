@@ -14,7 +14,7 @@ and CourtListener's September 30 bulk snapshot including oral arguments. Install
 the released R client from CRAN; development downloader fixes are separate from
 that released version. Registry `size_gb` uses the existing updater's GiB
 (bytes / 1024³) unit; the generated table labels it explicitly. The new entries
-retain six decimal places for small-artifact size precision; the updater may
+retain up to six decimal places for small-artifact size precision; the updater may
 round these values more coarsely on a future refresh.
 
 ## 2026-09-17 — Two national databases: open-policing, courtlistener
