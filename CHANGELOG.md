@@ -7,7 +7,7 @@ The catalog now lists 19 databases. New version-pinned additions are O*NET 31.0
 and FARS 2024 first Annual Report File (190,798 rows across 4 tables). Their source
 repositories document checksums, licenses, dictionaries, validation, independent
 Claude review and query limitations. O*NET is one release snapshot, QCEW preserves
-suppression, and FARS covers fatal crashes only. ATUS remains pending source access.
+suppression, and FARS covers fatal crashes only.
 
 Refreshed metadata records FEC's 2004–2026 release, the October 17 FJC judges build,
 and CourtListener's September 30 bulk snapshot including oral arguments. Install
