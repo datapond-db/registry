@@ -1,5 +1,12 @@
 # Datapond Changelog
 
+## 2026-11-03 - USCIS DACA and TPS application records
+
+Adds `uscis`: 4,526,373 DACA and 6,680,172 TPS application records from pinned Deportation Data Project FOIA files, with observations through February 2026. Application rows do not measure distinct people or current beneficiaries. Duplicate recommendations and unknown flags, source-system missingness, country-code fallback and the conditional DACA form-type reconstruction are documented without silently dropping or correcting records.
+
+Database and dictionary links pin the verified immutable HF revision. Full source equality, metadata-only correction invariants, independent Codex/Claude source reviews and released Python/R queries passed. Source pins, CC0 license, reproducible importers, exact field missingness and practical examples accompany the release.
+
+
 ## 2026-11-03 - ICE policy, reference and aggregate data
 
 Adds three separate snapshots without rebuilding the existing enforcement-event database:

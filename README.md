@@ -73,6 +73,7 @@ Row totals sum stored data tables, which may have different units and overlappin
 | [ice-287g](https://github.com/ian-nason/ice-287g-database) | 5.7K | 2 | 14.8 MiB | 2002-07-02 through listing 2026-10-28 | 2026-11-02 | Deportation Data Project (public records and FOIA) |
 | [ice-reference](https://github.com/ian-nason/ice-reference-database) | 4.4K | 4 | 25.0 MiB | Facility scope since Jan 2025; office lists Sep 2025; county boundaries 2024 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
 | [ice-detention-management](https://github.com/ian-nason/ice-detention-management-database) | 58.8K | 22 | 10.0 MiB | Source file dates through 2026-07-20; pulls through July 2026 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
+| [uscis](https://github.com/ian-nason/uscis-database) | 11.2M | 2 | 373.0 MiB | Receipt dates through 2026-02-11; earlier source date anomalies retained | 2026-11-03 | Deportation Data Project (public records and FOIA) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
