@@ -1,5 +1,16 @@
 # Datapond Changelog
 
+## 2026-11-03 - ICE policy, reference and aggregate data
+
+Adds three separate snapshots without rebuilding the existing enforcement-event database:
+
+- `ice-287g`: 3,201 agreements and 2,491 agencies, with agreement timing, source status, semicolon join fields and EPSG:4326 WKB.
+- `ice-reference`: 878 facilities, 275 multi-agency offices, 26 ERO-area records and 3,231 county assignments, preserving missing keys and nongeographic HQ placeholders. Area geometry is NAD83/EPSG:4269.
+- `ice-detention-management`: 58,810 rows across 22 aggregate tables. July 2026 observation/file dates are distinct from the October repository commit. Snapshot stocks, fiscal YTD values, averages and totals/components are not additive across dates.
+
+Database and dictionary URLs pin verified immutable HF commits. Full source hashes, field/schema/null checks, independent Codex/Claude source reviews, and released Python/R queries passed. Dictionaries document exact units, missingness, geometry, source dates and denominator limits. Row totals mix units and do not count unique people.
+
+
 ## 2026-11-02 - Census SAHIE 2024
 
 Adds `sahie`: 402,786 state/county health-insurance estimates, 3,195 geography
