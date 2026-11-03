@@ -379,6 +379,26 @@
       "maintainer": "Ian Nason",
       "license": "NHTSA public information; copying/distribution permitted by official Ownership policy",
       "updated": "2026-10-18"
+    },
+    {
+      "id": "sahie",
+      "name": "Census Health Insurance Estimates",
+      "description": "Model-based 2024 state and county insurance coverage, demographic and income categories, and published 90% margins of error",
+      "rows": 406007,
+      "tables": 3,
+      "size_gb": 0.013195037841796875,
+      "source": "U.S. Census Bureau SAHIE",
+      "source_url": "https://www.census.gov/data/datasets/time-series/demo/sahie/estimates-acs.html",
+      "github": "https://github.com/ian-nason/sahie-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/sahie-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/sahie-database/resolve/89ff1d4e9c1515a7d777a3deaf8a8c816a271918/sahie.duckdb",
+      "dictionary_url": "https://huggingface.co/datasets/Nason/sahie-database/resolve/89ff1d4e9c1515a7d777a3deaf8a8c816a271918/DICTIONARY.md",
+      "data_date_range": "2024",
+      "last_rebuilt": "2026-11-02",
+      "update_frequency": "Annual",
+      "maintainer": "Ian Nason",
+      "license": "U.S. public domain (Census Bureau work)",
+      "updated": "2026-11-02"
     }
   ]
 }

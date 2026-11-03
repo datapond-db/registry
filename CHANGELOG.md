@@ -1,5 +1,20 @@
 # Datapond Changelog
 
+## 2026-11-02 - Census SAHIE 2024
+
+Adds `sahie`: 402,786 state/county health-insurance estimates, 3,195 geography
+records and 26 category codes (406,007 stored rows across three data tables).
+The 2024 Census release was published August 6, 2026 and retrieved November 2.
+The registry pins the verified database and dictionary to an immutable Hugging
+Face commit. GitHub and HF documentation include source checksums, a reproducible
+bounded build, field definitions, Python/R examples, and licensing provenance.
+
+Estimates overlap across demographic/income categories; do not sum them as
+independent people. Published 90% margins of error exclude nonsampling error.
+Denominators refer to the poverty universe; county race detail is unavailable,
+Kalawao values are missing, and zero-denominator percentages remain NULL.
+Released Python datapond 0.1.5 and CRAN R datapond 0.1.0 passed public-URL checks.
+
 ## 2026-10-18 — O*NET, QCEW and FARS; three refreshed datasets
 
 The catalog now lists 19 databases. New version-pinned additions are O*NET 31.0
