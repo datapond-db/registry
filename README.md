@@ -70,6 +70,7 @@ Row totals sum stored data tables, which may have different units and overlappin
 | [qcew](https://github.com/ian-nason/qcew-database) | 3.1M | 6 | 186.5 MiB | 2025 annual; snapshot acquired 2026-10-18 | 2026-10-18 | U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages |
 | [fars](https://github.com/ian-nason/fars-database) | 190.8K | 4 | 25.3 MiB | 2024 Annual Report File; first release 2026-04-01 | 2026-10-18 | NHTSA National Center for Statistics and Analysis, Fatality Analysis Reporting System |
 | [sahie](https://github.com/ian-nason/sahie-database) | 406.0K | 3 | 13.5 MiB | 2024 | 2026-11-02 | U.S. Census Bureau SAHIE |
+| [uscis](https://github.com/ian-nason/uscis-database) | 11.2M | 2 | 373.0 MiB | Receipt dates through 2026-02-11; earlier source date anomalies retained | 2026-11-03 | Deportation Data Project (public records and FOIA) |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 

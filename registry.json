@@ -399,6 +399,27 @@
       "maintainer": "Ian Nason",
       "license": "U.S. public domain (Census Bureau work)",
       "updated": "2026-11-02"
+    },
+    {
+      "id": "uscis",
+      "name": "USCIS DACA and TPS application records",
+      "description": "Application records, not unique people or current beneficiaries; source duplicate flags, mixed copied/reconstructed DACA form type and system-specific missingness retained",
+      "rows": 11206545,
+      "tables": 2,
+      "size_gb": 0.3642692565917969,
+      "source": "Deportation Data Project (public records and FOIA)",
+      "source_url": "https://deportationdata.org/data/processed/uscis.html",
+      "github": "https://github.com/ian-nason/uscis-database",
+      "huggingface": "https://huggingface.co/datasets/Nason/uscis-database",
+      "attach_url": "https://huggingface.co/datasets/Nason/uscis-database/resolve/db5d5bfed09d433c09f13a3b8bfbef8f5f4c9481/uscis.duckdb",
+      "download_url": "https://huggingface.co/datasets/Nason/uscis-database/resolve/db5d5bfed09d433c09f13a3b8bfbef8f5f4c9481/uscis.duckdb",
+      "dictionary_url": "https://huggingface.co/datasets/Nason/uscis-database/resolve/db5d5bfed09d433c09f13a3b8bfbef8f5f4c9481/DICTIONARY.md",
+      "data_date_range": "Receipt dates through 2026-02-11; earlier source date anomalies retained",
+      "last_rebuilt": "2026-11-03",
+      "update_frequency": "Irregular source releases; manual audited snapshots",
+      "maintainer": "Ian Nason",
+      "license": "CC0-1.0 data",
+      "updated": "2026-11-03"
     }
   ]
 }
