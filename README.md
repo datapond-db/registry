@@ -50,30 +50,31 @@ Row totals sum stored data tables, which may have different units and overlappin
 
 | Database | Rows | Tables | Size | Coverage | Last rebuilt | Source |
 |----------|------|--------|------|----------|--------------|--------|
-| [eoir](https://github.com/ian-nason/eoir-database) | 173.3M | 97 | 4.40 GiB | 1990-2026 | 2026-09-14 | DOJ Executive Office for Immigration Review |
-| [ice](https://github.com/ian-nason/ice-database) | 23.6M | 6 | 1.80 GiB | 2003-2026 | 2026-09-14 | Deportation Data Project (FOIA litigation) |
-| [fec](https://github.com/ian-nason/fec-database) | 356.3M | 10 | 19.69 GiB | 2004-2026 | 2026-10-18 | Federal Election Commission |
-| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59.0M | 48 | 7.10 GiB | 1999-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
-| [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132.9M | 3 | 13.00 GiB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
-| [openpayments](https://github.com/ian-nason/openpayments-database) | 172.5M | 6 | 17.50 GiB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
-| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8.8M | 2 | 2.80 GiB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
-| [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27.9M | 23 | 1.30 GiB | 1997-2025 | 2026-09-14 | National Center for Education Statistics (NCES) |
-| [fjc](https://github.com/ian-nason/fjc-database) | 21.1M | 3 | 2.50 GiB | 1970-2026 | 2026-09-16 | Federal Judicial Center (Integrated Database) |
-| [cbp](https://github.com/ian-nason/cbp-database) | 51.3M | 8 | 1.60 GiB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
-| [ussc](https://github.com/ian-nason/ussc-database) | 14.0M | 9 | 0.7 GiB | FY2002-FY2025 | 2026-09-16 | U.S. Sentencing Commission |
-| [cook-sao](https://github.com/ian-nason/cook-sao-database) | 3.2M | 5 | 0.4 GiB | 2011-2024 | 2026-09-15 | Cook County State's Attorney's Office (county open-data portal) |
-| [fjc-judges](https://github.com/ian-nason/fjc-judges-database) | 37.8K | 6 | 3.5 MiB | 1789-2026 | 2026-10-17 | Federal Judicial Center (Biographical Directory of Article III Federal Judges) |
-| [scdb](https://github.com/ian-nason/scdb-database) | 677.5K | 9 | 0.1 GiB | 1791-2026 | 2026-09-15 | The Supreme Court Database (Washington University in St. Louis) |
-| [open-policing](https://github.com/ian-nason/open-policing-database) | 230.0M | 2 | 8.10 GiB | 2000-2020 | 2026-09-16 | Stanford Open Policing Project |
-| [courtlistener](https://github.com/ian-nason/courtlistener-database) | 2.3M | 20 | 3.03 GiB | 2026-09-30 snapshot; disclosure reports 1987-2022; other tables vary | 2026-10-18 | Free Law Project (CourtListener bulk data) |
-| [onet](https://github.com/ian-nason/onet-database) | 468.9K | 12 | 10.8 MiB | 31.0 snapshot; rating update months 2005-12–2026-08 | 2026-10-18 | U.S. Department of Labor, Employment and Training Administration (O*NET) |
-| [qcew](https://github.com/ian-nason/qcew-database) | 3.1M | 6 | 186.5 MiB | 2025 annual; snapshot acquired 2026-10-18 | 2026-10-18 | U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages |
-| [fars](https://github.com/ian-nason/fars-database) | 190.8K | 4 | 25.3 MiB | 2024 Annual Report File; first release 2026-04-01 | 2026-10-18 | NHTSA National Center for Statistics and Analysis, Fatality Analysis Reporting System |
-| [sahie](https://github.com/ian-nason/sahie-database) | 406.0K | 3 | 13.5 MiB | 2024 | 2026-11-02 | U.S. Census Bureau SAHIE |
-| [ice-287g](https://github.com/ian-nason/ice-287g-database) | 5.7K | 2 | 14.8 MiB | 2002-07-02 through listing 2026-10-28 | 2026-11-02 | Deportation Data Project (public records and FOIA) |
-| [ice-reference](https://github.com/ian-nason/ice-reference-database) | 4.4K | 4 | 25.0 MiB | Facility scope since Jan 2025; office lists Sep 2025; county boundaries 2024 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
-| [ice-detention-management](https://github.com/ian-nason/ice-detention-management-database) | 58.8K | 22 | 10.0 MiB | Source file dates through 2026-07-20; pulls through July 2026 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
-| [uscis](https://github.com/ian-nason/uscis-database) | 11.2M | 2 | 373.0 MiB | Receipt dates through 2026-02-11; earlier source date anomalies retained | 2026-11-03 | Deportation Data Project (public records and FOIA) |
+| [eoir](https://github.com/ian-nason/eoir-database) | 173,278,686 | 97 | 4.400 GiB | 1990-2026 | 2026-09-14 | DOJ Executive Office for Immigration Review |
+| [ice](https://github.com/ian-nason/ice-database) | 23,568,538 | 6 | 1.800 GiB | 2003-2026 | 2026-09-14 | Deportation Data Project (FOIA litigation) |
+| [fec](https://github.com/ian-nason/fec-database) | 360,160,461 | 10 | 21.157 GiB | 2004-2026 | 2026-11-09 | Federal Election Commission |
+| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59,028,978 | 48 | 7.100 GiB | 1999-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
+| [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132,947,347 | 3 | 13.000 GiB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
+| [openpayments](https://github.com/ian-nason/openpayments-database) | 172,450,995 | 6 | 17.500 GiB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
+| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8,812,639 | 2 | 2.800 GiB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
+| [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27,889,050 | 25 | 1.319 GiB | 1997-2025 | 2026-11-09 | National Center for Education Statistics (NCES) |
+| [fjc](https://github.com/ian-nason/fjc-database) | 21,119,023 | 3 | 2.500 GiB | 1970-2026 | 2026-09-16 | Federal Judicial Center (Integrated Database) |
+| [cbp](https://github.com/ian-nason/cbp-database) | 51,345,742 | 8 | 1.600 GiB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
+| [ussc](https://github.com/ian-nason/ussc-database) | 13,962,089 | 9 | 0.700 GiB | FY2002-FY2025 | 2026-09-16 | U.S. Sentencing Commission |
+| [cook-sao](https://github.com/ian-nason/cook-sao-database) | 3,171,690 | 5 | 0.400 GiB | 2011-2024 | 2026-09-15 | Cook County State's Attorney's Office (county open-data portal) |
+| [fjc-judges](https://github.com/ian-nason/fjc-judges-database) | 37,807 | 6 | 0.003 GiB | 1789-2026 | 2026-11-16 | Federal Judicial Center (Biographical Directory of Article III Federal Judges) |
+| [scdb](https://github.com/ian-nason/scdb-database) | 677,452 | 9 | 0.100 GiB | 1791-2026 | 2026-09-15 | The Supreme Court Database (Washington University in St. Louis) |
+| [open-policing](https://github.com/ian-nason/open-policing-database) | 230,002,705 | 2 | 8.100 GiB | 2000-2020 | 2026-09-16 | Stanford Open Policing Project |
+| [courtlistener](https://github.com/ian-nason/courtlistener-database) | 2,277,934 | 20 | 3.028 GiB | 2026-09-30 snapshot; disclosure reports 1987-2022; other tables vary | 2026-10-18 | Free Law Project (CourtListener bulk data) |
+| [onet](https://github.com/ian-nason/onet-database) | 468,857 | 12 | 0.011 GiB | 31.0 snapshot; rating update months 2005-12–2026-08 | 2026-10-18 | U.S. Department of Labor, Employment and Training Administration (O*NET) |
+| [qcew](https://github.com/ian-nason/qcew-database) | 3,096,467 | 6 | 0.182 GiB | 2025 annual; snapshot acquired 2026-10-18 | 2026-10-18 | U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages |
+| [fars](https://github.com/ian-nason/fars-database) | 190,798 | 4 | 0.025 GiB | 2024 Annual Report File; first release 2026-04-01 | 2026-10-18 | NHTSA National Center for Statistics and Analysis, Fatality Analysis Reporting System |
+| [sahie](https://github.com/ian-nason/sahie-database) | 406,007 | 3 | 0.013 GiB | 2024 | 2026-11-02 | U.S. Census Bureau SAHIE |
+| [ice-287g](https://github.com/ian-nason/ice-287g-database) | 5,792 | 2 | 0.015 GiB | 2002-07-02 through listing 2026-11-10 | 2026-11-16 | Deportation Data Project (public records and FOIA) |
+| [ice-reference](https://github.com/ian-nason/ice-reference-database) | 4,410 | 4 | 0.024 GiB | Facility scope since Jan 2025; office lists Sep 2025; county boundaries 2024 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
+| [ice-detention-management](https://github.com/ian-nason/ice-detention-management-database) | 58,810 | 22 | 0.010 GiB | Source file dates through 2026-07-20; pulls through July 2026 | 2026-11-03 | Deportation Data Project (public records and FOIA) |
+| [uscis](https://github.com/ian-nason/uscis-database) | 11,206,545 | 2 | 0.364 GiB | Receipt dates through 2026-02-11; earlier source date anomalies retained | 2026-11-03 | Deportation Data Project (public records and FOIA) |
+| [medicaid-enrollment](https://github.com/ian-nason/medicaid-enrollment-database) | 11,264 | 2 | 0.004 GiB | 2017-06 through 2026-07 monthly; Jul-Sep 2013 baseline average | 2026-11-03 | Centers for Medicare & Medicaid Services |
 
 See [CHANGELOG.md](CHANGELOG.md) for refresh history.
 
