@@ -1,0 +1,195 @@
+{
+  "checked_on": "2026-11-16",
+  "source": "https://deportationdata.org/data/cbp.html",
+  "method": "Rendered current-release table read through browser",
+  "published_manifest": "https://github.com/ian-nason/cbp-database/blob/main/releases.json",
+  "manifest_blob": "a3d88bfd01f5b66fb93353628900bcc366726f37",
+  "rows": [
+    {
+      "type": "Apprehensions",
+      "start": "2024-04-01",
+      "end": "2024-06-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1952962832425"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2024-12-01",
+      "end": "2025-03-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1967490095971"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1905008519753"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1947452927480"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1981826641425"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2158153559289"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2094921925801"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2094912244777"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2094916192500"
+    },
+    {
+      "type": "Apprehensions",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2115969813277"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2024-10-01",
+      "end": "2025-03-19",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1842173428525"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2024-10-01",
+      "end": "2025-03-19",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1842164368478"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-03-01",
+      "end": "2025-03-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1905033897281"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1904995214241"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1905002524123"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-01-01",
+      "end": "2025-05-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1988918411932"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1919506153967"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1962793389174"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-08-01",
+      "end": "2025-08-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1981871111017"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-06-01",
+      "end": "2025-09-06",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_1988922011366"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2026466901377"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2081264293718"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2081258980159"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2111219044344"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2025-09-01",
+      "end": "2026-01-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2150886486591"
+    },
+    {
+      "type": "Deemed inadmissible",
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "url": "https://ucla.app.box.com/index.php?rm=box_download_shared_file&shared_name=9d8qnnduhus4bd5mwqt7l95kz34fic2v&file_id=f_2134347599759"
+    }
+  ],
+  "observed_current_file_ids": [
+    "1952962832425",
+    "1967490095971",
+    "1905008519753",
+    "1947452927480",
+    "1981826641425",
+    "2158153559289",
+    "2094921925801",
+    "2094912244777",
+    "2094916192500",
+    "2115969813277",
+    "1842173428525",
+    "1842164368478",
+    "1905033897281",
+    "1904995214241",
+    "1905002524123",
+    "1988918411932",
+    "1919506153967",
+    "1962793389174",
+    "1981871111017",
+    "1988922011366",
+    "2026466901377",
+    "2081264293718",
+    "2081258980159",
+    "2111219044344",
+    "2150886486591",
+    "2134347599759"
+  ],
+  "all_current_identifiers_match": true,
+  "limits": "Current-release listing identifiers compared; historical archive and payload bytes not all rehashed."
+}

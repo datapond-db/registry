@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-11-16",
+  "source": "https://deportationdata.org/data/ice.html",
+  "method": "Rendered current-release and linked-2012-2023 tables read through browser",
+  "published_source": "https://github.com/ian-nason/ice-database/blob/108f3bb536bf37c51b6831137c55b778210f0a0c/scripts/download_releases.sh",
+  "current_release_links": [
+    "https://ucla.box.com/shared/static/jh4rar1ifbczhuj3c2fack6etsxco4mk.zip",
+    "https://ucla.box.com/shared/static/867c2ituyijy15insi5kqxjkjn2tnpip.zip",
+    "https://ucla.box.com/shared/static/bonhlxvjur3jf2k84cl0yi8rdidefm8t.zip",
+    "https://ucla.box.com/shared/static/li3eje734jhnktgag0pz2vtksbyvbeei.zip",
+    "https://ucla.box.com/shared/static/rihbivpt54zek3z3xtlax41ypjml2rs0.zip"
+  ],
+  "linked_historical_release_links": [
+    "https://ucla.box.com/shared/static/3i6xhnd5cig3qacy5phxvw9cmy7a71k1.zip",
+    "https://ucla.box.com/shared/static/gjfcedj3ne4d6l6rt5sv0t6yfao18jzp.zip",
+    "https://ucla.box.com/shared/static/hanv0cqbvxole910mo63z9uy40cwwi9t.zip",
+    "https://ucla.box.com/shared/static/x6jxz982onabumgfx0dwnd39b27ggoqz.zip"
+  ],
+  "all_nine_links_match": true,
+  "latest_release_coverage": "August 2026",
+  "limits": "Download link identities and named editions compared; payload bytes not rehashed."
+}

@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-11-16",
+  "source_url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+  "listed_modified": "2026-04-01T19:46:56Z",
+  "bytes": 32672161,
+  "sha256": "5112727a8c0dc91ffee27ca05bddb073934f2d192ce4fae997da767dccdbe04f",
+  "matches_published_source_lock": true,
+  "published_source_lock": "https://github.com/ian-nason/fars-database/blob/main/sources-2024.json",
+  "method": "Downloaded official current national CSV archive through browser; exact size and SHA-256 match the October 18 source lock.",
+  "release": "2024 Annual Report File; no later national edition listed."
+}

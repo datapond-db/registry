@@ -53,7 +53,7 @@ Row totals sum stored data tables, which may have different units and overlappin
 | [eoir](https://github.com/ian-nason/eoir-database) | 174,560,256 | 98 | 4.401 GiB | 1990-2026 | 2026-11-16 | DOJ Executive Office for Immigration Review |
 | [ice](https://github.com/ian-nason/ice-database) | 23,568,538 | 6 | 1.800 GiB | 2003-2026 | 2026-09-14 | Deportation Data Project (FOIA litigation) |
 | [fec](https://github.com/ian-nason/fec-database) | 360,160,461 | 10 | 21.157 GiB | 2004-2026 | 2026-11-09 | Federal Election Commission |
-| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59,028,978 | 48 | 7.100 GiB | 1999-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
+| [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59,949,300 | 48 | 5.867 GiB | 1999-2026 | 2026-11-16 | AACT / Clinical Trials Transformation Initiative |
 | [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132,947,347 | 3 | 13.000 GiB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
 | [openpayments](https://github.com/ian-nason/openpayments-database) | 172,450,995 | 6 | 17.500 GiB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
 | [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8,987,531 | 2 | 3.659 GiB | FY2015-FY2026 | 2026-11-16 | DOL Office of Foreign Labor Certification disclosure files |

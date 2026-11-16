@@ -8,7 +8,9 @@ Reconciles the already-published November 9 FEC snapshot (360,160,461 rows), wit
 
 The full FY2026 Q4 DOL refresh is published: 7,596,060 LCA and 1,391,471 PERM rows, with FY2015-FY2025 typed values preserved. EOIR now publishes the September 2026 snapshot: 174,560,256 rows in 98 source tables, including the technical schema table. Its independent record reconciliation documents 159 invalid-UTF8 cases records excluded by the legacy importer; the original source archive is also published.
 
-ClinicalTrials still needs completed AACT sign-in. See [the source freshness audit](FRESHNESS.md) for every dataset and unresolved checks; this release does not certify that no further refresh is required. Python/R source fixes are merged with passing cross-platform CI in [Python PR 3](https://github.com/datapond-db/datapond-python/pull/3) and [R PR 3](https://github.com/datapond-db/datapond-r/pull/3); no new PyPI/CRAN package version was published.
+ClinicalTrials now publishes the November 16 AACT snapshot: 611,764 studies and 59,949,300 stored rows across 48 tables. Strict parsing and typed-row fingerprints cover all 49 source files; the empty search_results file is omitted. Two inferred numeric fields now use VARCHAR to preserve 29 source values, with all other source types unchanged.
+
+The source review identified no additional out-of-date named release within the November 16 scope. Current ICE and CBP file links match existing releases, and the FARS national CSV archive is byte-identical to its published input. See [the freshness audit](FRESHNESS.md) for distinctions between source-byte checks and release-listing checks, historical-payload limits, and the owner's BLS exclusion. Python/R source fixes are merged with passing cross-platform CI in [Python PR 3](https://github.com/datapond-db/datapond-python/pull/3) and [R PR 3](https://github.com/datapond-db/datapond-r/pull/3); no new PyPI/CRAN package version was published.
 
 ## 2026-11-03 - USCIS DACA and TPS application records
 
