@@ -5,7 +5,7 @@ This is a dated source audit, not a guarantee that mutable sources will remain u
 | Dataset | November 16 finding |
 |---|---|
 | eoir | September 2026 archive is newer than the hosted snapshot. Rebuild and independent record audit in progress; catalog still points to the prior verified file. |
-| dol-visas | FY2026 Q4 inputs are newer. Four disjoint LCA quarters and cumulative PERM Q4 acquired and hashed; full-history preservation checks in progress. |
+| dol-visas | Published FY2026 Q4: 7,596,060 LCA and 1,391,471 PERM rows. All four disjoint LCA quarters included; PERM Q4 is cumulative. Five input hashes and preservation of FY2015-FY2025 typed values verified. |
 | fjc-judges | Refreshed November 16: 4,078 judges, 37,807 stored rows across six tables. Seven official source CSV identities verified. |
 | medicaid-enrollment | October 30 source is still latest and byte-identical to the audited input. Published 11,220 enrollment records and 44 field definitions; no rebuild needed. |
 | ice-287g | Refreshed to publisher commit 906601f9901555012fb49f19c66c569af1883a0b: 3,257 agreements and 2,535 agencies, listings through November 10. Full source equality passed. |
@@ -20,10 +20,10 @@ This is a dated source audit, not a guarantee that mutable sources will remain u
 | onet | Official source page matches the prior audit; version 31.0 remains listed. |
 | open-policing | Published source listing matches the prior audit. The mutable historical files were not all rehashed. |
 | cook-sao | Closed source series through December 30, 2024; no ongoing refresh expected. |
-| courtlistener | September 30 quarterly release remains the catalog snapshot. November 2 audit verified all 23 scoped object identities; current API access returned HTTP 403, so a new complete object-identity check is unresolved. |
+| courtlistener | Complete current public S3 listing checked: all 23 scoped object identities (edition, size, ETag and modification time) match the prior verified September 30 release. No refresh indicated. |
 | ice | Publisher announcements list the August 2026 raw release and later processed-data changes. Direct file-list access returned HTTP 403; complete raw-link identity revalidation is unresolved. |
 | cbp | Publisher page still describes the same December 2025/January 2026 coverage. Direct file-list access returned HTTP 403; complete file identity revalidation is unresolved. |
-| fars | Current source access returned HTTP 403. The catalog retains the 2024 first Annual Report File; later revisions cannot be ruled out by this check. |
+| fars | Official NHTSA download listing still ends at 2024 and lists the national CSV ZIP as updated April 1, 2026. NHTSA still labels 2024 as the Annual Report File; no later named release indicated. Direct payload access returned HTTP 403, so its bytes were not rehashed. |
 | qcew | Retained 2025 annual snapshot. BLS refresh work remains stopped at the owner's prior instruction. |
 | sahie | Census still lists 2024 as the latest edition, released August 2026. |
 | ice-reference | Both publisher repository heads exactly match the existing source pins (facilities a311796374555f100435ae7578cac2a945eea5b1; offices 1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e). |

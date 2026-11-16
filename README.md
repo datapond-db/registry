@@ -56,7 +56,7 @@ Row totals sum stored data tables, which may have different units and overlappin
 | [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59,028,978 | 48 | 7.100 GiB | 1999-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
 | [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132,947,347 | 3 | 13.000 GiB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
 | [openpayments](https://github.com/ian-nason/openpayments-database) | 172,450,995 | 6 | 17.500 GiB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
-| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8,812,639 | 2 | 2.800 GiB | FY2015-FY2026 | 2026-09-14 | DOL Office of Foreign Labor Certification disclosure files |
+| [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8,987,531 | 2 | 3.659 GiB | FY2015-FY2026 | 2026-11-16 | DOL Office of Foreign Labor Certification disclosure files |
 | [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27,889,050 | 25 | 1.319 GiB | 1997-2025 | 2026-11-09 | National Center for Education Statistics (NCES) |
 | [fjc](https://github.com/ian-nason/fjc-database) | 21,119,023 | 3 | 2.500 GiB | 1970-2026 | 2026-09-16 | Federal Judicial Center (Integrated Database) |
 | [cbp](https://github.com/ian-nason/cbp-database) | 51,345,742 | 8 | 1.600 GiB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
