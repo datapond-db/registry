@@ -50,14 +50,14 @@ Row totals sum stored data tables, which may have different units and overlappin
 
 | Database | Rows | Tables | Size | Coverage | Last rebuilt | Source |
 |----------|------|--------|------|----------|--------------|--------|
-| [eoir](https://github.com/ian-nason/eoir-database) | 173,278,686 | 97 | 4.400 GiB | 1990-2026 | 2026-09-14 | DOJ Executive Office for Immigration Review |
+| [eoir](https://github.com/ian-nason/eoir-database) | 174,560,256 | 98 | 4.401 GiB | 1990-2026 | 2026-11-16 | DOJ Executive Office for Immigration Review |
 | [ice](https://github.com/ian-nason/ice-database) | 23,568,538 | 6 | 1.800 GiB | 2003-2026 | 2026-09-14 | Deportation Data Project (FOIA litigation) |
 | [fec](https://github.com/ian-nason/fec-database) | 360,160,461 | 10 | 21.157 GiB | 2004-2026 | 2026-11-09 | Federal Election Commission |
 | [clinicaltrials](https://github.com/ian-nason/clinicaltrials-database) | 59,028,978 | 48 | 7.100 GiB | 1999-2026 | 2026-09-14 | AACT / Clinical Trials Transformation Initiative |
 | [cms-medicare](https://github.com/ian-nason/cms-medicare-database) | 132,947,347 | 3 | 13.000 GiB | 2013-2024 | 2026-07-06 | Centers for Medicare & Medicaid Services |
 | [openpayments](https://github.com/ian-nason/openpayments-database) | 172,450,995 | 6 | 17.500 GiB | 2013-2025 | 2026-07-07 | CMS Open Payments (openpaymentsdata.cms.gov) |
 | [dol-visas](https://github.com/ian-nason/dol-visas-database) | 8,987,531 | 2 | 3.659 GiB | FY2015-FY2026 | 2026-11-16 | DOL Office of Foreign Labor Certification disclosure files |
-| [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27,889,050 | 25 | 1.319 GiB | 1997-2025 | 2026-11-09 | National Center for Education Statistics (NCES) |
+| [ipeds-db](https://github.com/ian-nason/ipeds-database) | 27,889,094 | 25 | 2.224 GiB | 1997-2025 | 2026-11-16 | National Center for Education Statistics (NCES) |
 | [fjc](https://github.com/ian-nason/fjc-database) | 21,119,023 | 3 | 2.500 GiB | 1970-2026 | 2026-09-16 | Federal Judicial Center (Integrated Database) |
 | [cbp](https://github.com/ian-nason/cbp-database) | 51,345,742 | 8 | 1.600 GiB | 2000-2026 | 2026-09-15 | Deportation Data Project (CBP FOIA releases) |
 | [ussc](https://github.com/ian-nason/ussc-database) | 13,962,089 | 9 | 0.700 GiB | FY2002-FY2025 | 2026-09-16 | U.S. Sentencing Commission |
